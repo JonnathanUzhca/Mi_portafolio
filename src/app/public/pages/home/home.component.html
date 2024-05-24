@@ -48,39 +48,45 @@
   </div>
 </div>
 
-<header id="Heder">
+<header id="Header" #myElementRef>
   <input type="checkbox" id="menu" />
   <label for="menu">
     <img src="assets/img/icons/menu.png" class="menu-icon" alt="">
   </label>
   <ul class="menu">
     <li class="item">
-      <a href="#Home" class="nav-link">Home</a>
+      <a href="#Home" class="nav-link" #item>Home</a>
     </li>
     <li class="item">
-      <a href="#About" class="nav-link">About</a>
+      <a href="#About" class="nav-link" #item>About</a>
     </li>
   <!-- </ul>
   <ul class="menu"> -->
     
       <img src="assets/img/jonathan01.png" alt="" class="brand-img" >
       <li class="item-Name">
-          <h5>Jonnathan Uzhca</h5>
-          <p>Web Designer</p>
+          <h5 #item>Jonnathan Uzhca</h5>
+          <p #item>Web Designer</p>
       </li>
   
   <!-- </ul>
   <ul class="menu"> -->
     <li class="item">
-      <a href="#Proyectos" class="nav-link">Proyectos</a>
+      <a href="#Proyectos" class="nav-link" #item>Proyectos</a>
     </li>
     <li class="item">
-      <a href="#Contactos" class="nav-link">Contactos</a>
+      <a href="#Contactos" class="nav-link" #item>Contactos</a>
     </li>
   </ul>
   
 
 </header>
+
+<div style="height: 5222px;">
+
+</div>
+
+
 
 
 
