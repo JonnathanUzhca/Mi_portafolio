@@ -1,0 +1,254 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+header {
+  // background-color: red;
+  width: 100%;
+  // position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 37%;
+  height: 150px;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding: 0 150px;
+}
+
+.item{
+  margin: 0 15px;
+  font-size: 18px;
+  // font-weight: 600;
+  cursor: pointer;
+  color: black;
+}
+
+.item-Name{
+color: black;
+ h5, p{
+  width: 250px;
+  // background-color: red;
+  font-size: 15px;
+  text-align: center;
+ }
+
+}
+
+
+
+.item:hover{
+  color: aqua;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icon{
+  width: 50px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+label{
+  cursor: pointer;
+  display: none;
+}
+
+@media(max-width:1500px){
+  header{
+    padding: 0 45%;
+    
+  }
+
+  .menu{
+    padding: 15px ;
+    margin: 0;
+    
+  }
+  
+  label{
+    display: initial;
+  }
+
+  .menu{
+    position: absolute;
+    top: 105%;
+    left: 0;
+    right: 0;
+    background-color: #323337;
+    display: none;
+    
+  }
+
+  .item-Name{
+    display: none;
+  }
+  
+  .brand-img{
+    display: none;
+  }
+  
+  .item{
+
+    margin: 0 0 15px 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+
+   }
+
+   #menu:checked ~ .menu {
+    display: initial;
+   }
+
+   .header-content {
+    width: 100%;
+    // left: 17%;
+    // background-color: red;
+   }
+
+   .social-icons {
+    padding: 10px 30px;
+    margin: auto;
+   }
+
+
+   .header-content{
+    background-color: red;
+    width: 90%;
+    padding: 0 0;
+   }
+
+}
+
+.container-sect2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 88vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-menu {
+  // overflow-x: hidden;
+  width: 100%;
+  height: 88vh;
+  // background-image: url('/assets/img/wallpapers/wall1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+    
+    list-style-type: none;
+    // padding-right: -10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    right: 40%;
+    // bottom: 100%;
+    // right: 40px;
+    margin-bottom: 1000px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 120px;
+    position: relative;
+    
+}
+
+.social-icons .social-link {
+  font-size: 24px;
+  margin: 14px;
+}
+
+i:hover {
+  color: #FFFBFC;
+  cursor: pointer;
+  font-size: 30px;
+  // animation: spin 2s linear infinite;
+}
+
+
+i {
+  color: white;
+  // animation: spin 2s linear infinite;
+}
+
+.header-content{
+margin: none;
+}
+
+.header-content {
+    // width: 100%;
+    position: absolute;
+    // left: 17%;
+    top: 55%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: #fff;
+  }
+
+  p{
+    width: 60%;
+    text-align: justify;
+  }
+  .navbar{
+    padding: 0;
+    background-color: red;
+    height: 170px;
+    width: 100%;
+  }
+
+ 
+  // .nav-bar-container{
+  //   padding: 20px 50px;
+  // }
+
+//  .nav-item{
+//     list-style-type: none;
+//   }
+ 
+  
+  .brand-img {
+    position: absolute;
+    left: 45.4%;
+    // top: 50%;
+    // -webkit-transform: translate(-50%, -50%);
+    //     -ms-transform: translate(-50%, -50%);
+    //         transform: translate(-50%, -50%);
+    // -weblit-transform: translate(-50%, -50%);
+    border: 5px solid rgb(255, 252, 252);
+  
+    // box-shadow: 0 5px 6px rgba(128, 128, 128, 0.13);
+    width: 143px;
+    border-radius: 50%;
+  }
+
+  
