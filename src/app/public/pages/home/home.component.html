@@ -112,14 +112,40 @@
               </div>
               <div class="container-paragran">
                 <div *ngIf="containerText == 0">
-                <code>&lt;ul&gt;
-                    &lt;li&gt;Item 1 &lt;b&gt;Se muestra el código&lt;/b&gt;&lt;/li&gt;
-                    &lt;li&gt;Item 2 &lt;i&gt;HTML como código&lt;/i&gt;&lt;/li&gt;
-                    &lt;li&gt;Item 3&lt;/li&gt;
-                  &lt;/ul&gt;</code>
+                  <div class="container textConta">
+                    <p >
+                      <code>
+                        <span class="highlight">&lt;!</span>DOCTYPE <span class="highlight">html&gt;</span><br>
+                        <span class="highlight">&lt;</span>html <span class="verde">lang</span><span class="highlight">=</span> <span class="yellow">"en"</span> <span class="highlight">&gt;</span><br>
+                        <span class="highlight">&lt;</span>header<span class="highlight">&gt;</span><br>
+                        &nbsp;&nbsp;<span class="highlight">&lt;</span>meta <span class="verde">charset</span><span class="highlight">=</span> <span class="yellow">"UTF-8"</span> <span class="highlight">/&gt;</span><br>
+                        &nbsp;&nbsp;<span class="highlight">&lt;</span>title<span class="highlight">&gt;Foco de luz  &lt;/</span>title<span class="highlight">&gt;</span><br>
+                        <span class="highlight">&lt;/</span>header<span class="highlight">&gt;</span><br>
+                        <span class="highlight">&lt;</span>body<span class="highlight">&gt;</span><br>
+                    
+
+                        &nbsp;&nbsp;<span class="highlight">&lt;</span>div <span class="verde">class</span><span class="highlight">=</span> <span class="yellow">"container_Prueba"</span> <span class="highlight">&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">&lt;</span>div <span class="verde">class</span><span class="highlight">=</span> <span class="yellow">"container_luz"</span> <span class="highlight">&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">&lt;/</span>div<span class="highlight">&gt;</span><br>
+                        &nbsp;&nbsp;<span class="highlight">&lt;/</span>div<span class="highlight">&gt;</span><br>
+                    
+                        <span class="highlight">&lt;/</span>body<span class="highlight">&gt;</span><br>
+                        <span class="highlight">&lt;/</span>html<span class="highlight">&gt;</span><br>
+                      </code>
+                    </p>
+                  </div>
                 </div>
                 <div *ngIf="containerText == 1">
-                  <h2>css</h2>
+                  <p >
+                    <code>
+                      <span class="yellow">.container_Prueba</span> <span class="highlight">{{ '{' }}</span><br>
+                      <span class="highlight">{{ '}' }}</span><br>
+
+                      <span class="yellow">.container_luz</span> <span class="highlight">{{ '{' }}</span><br>
+                      <span class="highlight">{{ '}' }}</span><br>
+                      
+                    </code>
+                  </p>
                 </div>
                 <div *ngIf="containerText == 2">
                   <h2>js</h2>
@@ -173,4 +199,8 @@
   </ul>
 </header>
 
-<div style="height: 5222px"></div>
+<div style="height: 5222px">
+</div>
+
+
+

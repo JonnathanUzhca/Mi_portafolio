@@ -1,6 +1,10 @@
 import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
 import { Component,HostListener, ElementRef, OnInit, ViewChild, Renderer2, QueryList, AfterContentInit } from '@angular/core';
 
+
+
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -50,6 +54,7 @@ export class HomeComponent  implements OnInit {
 
   ngOnInit(): void {
     this.onWindowScroll();
+   
     
   }
 
