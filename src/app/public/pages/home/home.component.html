@@ -1,128 +1,113 @@
 <div class="container-menu">
   <div class="container-sect2">
-      <ul class="social-icons">
-        <li>
-          <a href="https://www.facebook.com/tatan.uzhca/?viewas=100000686899395&locale=es_LA" class="social-link" target="_blank"
-            ><i class="bi bi-facebook" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://myaccount.google.com/profile/profiles-summary?hl=es_419&utm_source=OGB&utm_medium=act" class="social-link" target="_blank"
-            ><i class="bi bi-google" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/jonnathan0106/" class="social-link" target="_blank"
-            ><i class="bi bi-instagram" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://github.com/JonnathanUzhca" class="social-link" target="_blank"
-            ><i class="bi bi-github" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://wa.link/8c3n58" class="social-link" target="_blank"
-            ><i class="bi bi-whatsapp" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.tiktok.com/@jonnathanuzhca?_t=8mc22cFs8OL&_r=1" class="social-link" target="_blank"
-            ><i class="bi bi-tiktok" aria-hidden="true"></i
-          ></a>
-        </li>
-      </ul>
-      <div class="header-content">
-        <h4 class="header-subtitle">Hola, Yo soy</h4>
-        <h1 class="header-title">Jonnathan Uzhca</h1>
-        <h6 class="header-mono">Frondend y Banckend Designer | Developer</h6>
-        <p>
-          Soy programador junior con experiencia en la creación y desarrollo de
-          aplicaciones web completas. Desde la interfaz
-          de usuario hasta la lógica del servidor.
-        </p>
-        <button class="btn btn-primary btn-rounded">
-          <i class="ti-printer pr-2"></i>Leer mas
-        </button>
+    <ul class="social-icons">
+      <li>
+        <a
+          href="https://www.facebook.com/tatan.uzhca/?viewas=100000686899395&locale=es_LA"
+          class="social-link"
+          target="_blank"
+          ><i class="bi bi-facebook" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://myaccount.google.com/profile/profiles-summary?hl=es_419&utm_source=OGB&utm_medium=act"
+          class="social-link"
+          target="_blank"
+          ><i class="bi bi-google" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://www.instagram.com/jonnathan0106/"
+          class="social-link"
+          target="_blank"
+          ><i class="bi bi-instagram" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://github.com/JonnathanUzhca"
+          class="social-link"
+          target="_blank"
+          ><i class="bi bi-github" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://wa.link/8c3n58" class="social-link" target="_blank"
+          ><i class="bi bi-whatsapp" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://www.tiktok.com/@jonnathanuzhca?_t=8mc22cFs8OL&_r=1"
+          class="social-link"
+          target="_blank"
+          ><i class="bi bi-tiktok" aria-hidden="true"></i
+        ></a>
+      </li>
+    </ul>
+    <div class="header-content">
+      <h4 class="header-subtitle">Hola, Yo soy</h4>
+      <h1 class="header-title">{{ profession }}</h1>
+
+      <div class="content-slogan">
+        
+          <ul class="slogan">
+            <li class="slogan-li">Frontend Designer <span class="span1">|</span> Developer</li>
+            <li class="slogan-li">Banckend Designer <span class="span2">|</span> Developer</li>
+            <li class="slogan-li">Aplicaciones Cross <span class="span3"> - </span> Platform</li>
+          </ul>
       </div>
+      <br />
+      <br />
+      <p>
+        {{ paragran }}
+      </p>
+      <button class="btn btn-primary">
+        <i class="ti-printer pr-2"></i>Leer mas
+      </button>
+    </div>
   </div>
 </div>
 
 <header id="Header" #myElementRef>
   <input type="checkbox" id="menu" />
   <label for="menu">
-    <img src="assets/img/icons/menu.png" class="menu-icon" alt="">
+    <img src="assets/img/icons/menu.png" class="menu-icon" alt="" />
   </label>
   <ul class="menu">
     <li class="item">
       <a href="#Home" class="nav-link" #item>Home</a>
     </li>
     <li class="item">
-      <a href="#About" class="nav-link" #item>About</a>
+      <a href="#About" class="nav-link" #item1>About</a>
     </li>
-  <!-- </ul>
+    <!-- </ul>
   <ul class="menu"> -->
-    
-      <img src="assets/img/jonathan01.png" alt="" class="brand-img" >
-      <li class="item-Name">
-          <h5 #item>Jonnathan Uzhca</h5>
-          <p #item>Web Designer</p>
-      </li>
-  
-  <!-- </ul>
+
+    <img
+      #itemImg
+      [@stateChange]="state"
+      src="assets/img/jonathan01.png"
+      alt=""
+      class="brand-img"
+    />
+
+    <li class="item-Name">
+      <h5 #itemName>Jonnathan Uzhca</h5>
+      <p #itemSubName>Developer</p>
+    </li>
+
+    <!-- </ul>
   <ul class="menu"> -->
     <li class="item">
-      <a href="#Proyectos" class="nav-link" #item>Proyectos</a>
+      <a href="#Proyectos" class="nav-link" #item2>Proyectos</a>
     </li>
     <li class="item">
-      <a href="#Contactos" class="nav-link" #item>Contactos</a>
+      <a href="#Contactos" class="nav-link" #item3>Contactos</a>
     </li>
   </ul>
-  
-
 </header>
 
-<div style="height: 5222px;">
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div style="height: 5222px"></div>
