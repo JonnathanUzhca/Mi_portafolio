@@ -32,9 +32,11 @@ export class HomeComponent  implements OnInit {
   @ViewChild('itemImg', {static:true}) itemImg! : ElementRef;
 
   public state = '';
-  public  profession :string = 'Ingeniería de sistemas';
+  public profession :string = 'Ingeniería de sistemas';
   public paragran : string = 'Soy programador junior con experiencia en la creación y desarrollo de aplicaciones web completas. Desde la interfaz de usuario hasta la lógica del servidor.';
   public slogan : string = 'Frontend y Banckend Designer | Developer';
+  public containerText : number = 0;
+  // public textContainer : string = '';
 
   private scrollLeft = 0;
   private scrollTop = 0;
@@ -87,6 +89,15 @@ export class HomeComponent  implements OnInit {
   }
 
 
+  onDataParagram(numer:number){
+    if(numer == 0){
+      this.containerText = 0;
+    }else if(numer == 1){
+      this.containerText = 1;
+    }else{
+      this.containerText = 2;
+    }
+  }
   
 
 }

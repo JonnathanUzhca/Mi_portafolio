@@ -47,26 +47,89 @@
         ></a>
       </li>
     </ul>
-    <div class="header-content">
-      <h4 class="header-subtitle">Hola, Yo soy</h4>
-      <h1 class="header-title">{{ profession }}</h1>
+    <div class="header-content container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="container-left">
+            <h4 class="header-subtitle">Hola, Yo soy</h4>
+            <h1 class="header-title">{{ profession }}</h1>
 
-      <div class="content-slogan">
-        
-          <ul class="slogan">
-            <li class="slogan-li">Frontend Designer <span class="span1">|</span> Developer</li>
-            <li class="slogan-li">Banckend Designer <span class="span2">|</span> Developer</li>
-            <li class="slogan-li">Aplicaciones Cross <span class="span3"> - </span> Platform</li>
-          </ul>
+            <div class="content-slogan">
+              <ul class="slogan">
+                <li class="slogan-li">
+                  Frontend Designer <span class="span1">|</span> Developer
+                </li>
+                <li class="slogan-li">
+                  Banckend Designer <span class="span2">|</span> Developer
+                </li>
+                <li class="slogan-li">
+                  Aplicaciones Cross <span class="span3"> - </span> Platform
+                </li>
+              </ul>
+            </div>
+            <br />
+            <br />
+            <p>
+              {{ paragran }}
+            </p>
+            <button class="btn btn-primary">
+              <i class="ti-printer pr-2"></i>Leer mas
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6 auto">
+          <!-- header  derecho -->
+          <div class="container-rigth">
+            <div class="container-html">
+              <div class="container-title-haeder">
+                <h5 class="text-header-right">
+                  <i class="bi bi-gear geo-config"></i>
+                  <div class="btn-group btGroup" role="group">
+                    <button
+                      type="button"
+                      class="btn btn-secondary btnSecon"
+                      (click)="onDataParagram(0)"
+                    >
+                      HTML
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary btnSecon"
+                      (click)="onDataParagram(1)"
+                    >
+                      SCSS
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary btnSecon"
+                      (click)="onDataParagram(2)"
+                    >
+                      JS
+                    </button>
+                  </div>
+                </h5>
+                <i class="bi bi-chevron-compact-down geo-config"></i>
+              </div>
+              <div class="container-paragran">
+                <div *ngIf="containerText == 0">
+                <code>&lt;ul&gt;
+                    &lt;li&gt;Item 1 &lt;b&gt;Se muestra el código&lt;/b&gt;&lt;/li&gt;
+                    &lt;li&gt;Item 2 &lt;i&gt;HTML como código&lt;/i&gt;&lt;/li&gt;
+                    &lt;li&gt;Item 3&lt;/li&gt;
+                  &lt;/ul&gt;</code>
+                </div>
+                <div *ngIf="containerText == 1">
+                  <h2>css</h2>
+                </div>
+                <div *ngIf="containerText == 2">
+                  <h2>js</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin -->
+        </div>
       </div>
-      <br />
-      <br />
-      <p>
-        {{ paragran }}
-      </p>
-      <button class="btn btn-primary">
-        <i class="ti-printer pr-2"></i>Leer mas
-      </button>
     </div>
   </div>
 </div>
