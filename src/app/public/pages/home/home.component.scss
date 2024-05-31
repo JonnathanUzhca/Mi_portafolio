@@ -372,13 +372,29 @@ margin: 20% 5%;
 .yellow{
   color: yellow;
 }
+.greent{
+  color: greenyellow;
+}
+.oragen{
+  color: orange;
+}
+.celeste{
+  color: #3E92CC;
+}
+.verdeBl{
+  color: #29e78e;
+}
+.cele{
+  color: #95cef6;
+}
 
 .text{
-  animation: animacion 2.5s steps(135), transparent .5s step-end infinite alternate;
-  width: 22.1em;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 1px solid;
+  color: white;
+  // animation: animacion 2.5s steps(135), transparent .5s step-end infinite alternate;
+  // width: 32.1em;
+  // white-space: nowrap;
+  // overflow: hidden;
+  // border-right: 1px solid;
 }
 
 @keyframes animacion{

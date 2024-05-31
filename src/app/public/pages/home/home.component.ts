@@ -3,9 +3,6 @@ import { DOCUMENT } from '@angular/common';
 import { Component,HostListener, ElementRef, OnInit, ViewChild, Renderer2, QueryList, AfterContentInit, AfterViewInit, Inject } from '@angular/core';
 import { ComunicationService } from 'src/app/service/comunication.service';
 
-// import Typewriter from 't-writer.js';
-import Typewriter from 'typewriter-effect/dist/core';
-
 
 
 @Component({
@@ -39,7 +36,7 @@ export class HomeComponent  implements OnInit {
   @ViewChild('itemImg', {static:true}) itemImg! : ElementRef;
   @ViewChild('luzFoco', {static: false}) itemFoco! : ElementRef;
  
-  // @ViewChild('tw3') typewriterElement3;
+  @ViewChild('tw3') typewriterElement: any;
 
 
   public state = '';
@@ -64,6 +61,7 @@ export class HomeComponent  implements OnInit {
   ngOnInit(): void {
     this.onWindowScroll();
     this.onHeaderFoco();
+    
    
     
   }
@@ -121,7 +119,7 @@ export class HomeComponent  implements OnInit {
   onHeaderFoco(){
     this.comunicationService.disparadorFoco
     .subscribe((iten) => {
-      console.log(iten)
+      
       if(iten === 6){
        this.renderer.setStyle(this.itemFoco.nativeElement, 'background','rgba(19, 41, 61, 0.5)')
 

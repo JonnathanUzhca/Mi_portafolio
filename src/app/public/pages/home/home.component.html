@@ -111,7 +111,7 @@
                         class="btn btn-secondary btnSecon"
                         (click)="onDataParagram(2)"
                       >
-                        JS
+                        TS
                       </button>
                       <button
                       style="background-color: rgb(47, 75, 255);"
@@ -129,10 +129,11 @@
                 <div class="container-paragran">
                   <div *ngIf="containerText == 0">
                     <div class="textConta">
-                      <!-- <p class="text"> -->
-                        <!-- <code> -->
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea in, neque repellendus adipisci nemo aspernatur ullam consequatur quo culpa esse itaque tempora? Voluptas similique libero fugiat, rerum enim molestias nesciunt!
-                          <!-- <span class="highlight">&lt;!</span>DOCTYPE <span class="highlight">html&gt;</span><br>
+                      <div class="text">
+<!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum accusamus beatae vero doloribus illo unde doloremque, labore dignissimos assumenda reprehenderit sequi dolorem repellat iste voluptatum quibusdam, tempore ut sunt ratione. -->
+
+                        <code>
+                               <span class="highlight">&lt;!</span>DOCTYPE <span class="highlight">html&gt;</span><br>
                           <span class="highlight">&lt;</span>html <span class="verde">lang</span><span class="highlight">=</span> <span class="yellow">"en"</span> <span class="highlight">&gt;</span><br>
                           <span class="highlight">&lt;</span>header<span class="highlight">&gt;</span><br>
                           &nbsp;&nbsp;<span class="highlight">&lt;</span>meta <span class="verde">charset</span><span class="highlight">=</span> <span class="yellow">"UTF-8"</span> <span class="highlight">/&gt;</span><br>
@@ -140,33 +141,69 @@
                           <span class="highlight">&lt;/</span>header<span class="highlight">&gt;</span><br>
                           <span class="highlight">&lt;</span>body<span class="highlight">&gt;</span><br>
                       
-  
+                          &nbsp;&nbsp;<span class="highlight">&lt;</span>div <span class="verde">class</span><span class="highlight">=</span> <span class="yellow">"wire_foco"</span> <span class="highlight">&gt;</span><span class="highlight">&lt;/</span>div<span class="highlight">&gt;</span><br>
+                          
                           &nbsp;&nbsp;<span class="highlight">&lt;</span>div <span class="verde">class</span><span class="highlight">=</span> <span class="yellow">"container_Prueba"</span> <span class="highlight">&gt;</span><br>
                           &nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">&lt;</span>div <span class="verde">class</span><span class="highlight">=</span> <span class="yellow">"container_luz"</span> <span class="highlight">&gt;</span><br>
+
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">&lt;</span>span<span class="highlight">&gt;</span><span class="highlight">&lt;/</span>span<span class="highlight">&gt;</span><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">&lt;</span>span<span class="highlight">&gt;</span><span class="highlight">&lt;/</span>span<span class="highlight">&gt;</span><br>
+
                           &nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">&lt;/</span>div<span class="highlight">&gt;</span><br>
                           &nbsp;&nbsp;<span class="highlight">&lt;/</span>div<span class="highlight">&gt;</span><br>
                       
                           <span class="highlight">&lt;/</span>body<span class="highlight">&gt;</span><br>
-                          <span class="highlight">&lt;/</span>html<span class="highlight">&gt;</span><br> -->
-                        <!-- </code> -->
-                      <!-- </p> -->
+                          <span class="highlight">&lt;/</span>html<span class="highlight">&gt;</span><br>
+                        </code>
+                      </div>
                       <div class="beside"><span #tw3></span> </div>
                     </div>
                   </div>
                   <div *ngIf="containerText == 1">
                     <p >
                       <code>
-                        <span class="yellow">.container_Prueba</span> <span class="highlight">{{ '{' }}</span><br>
+                        <span class="yellow">.container_luz</span> <span class="highlight">{{ '{' }}</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;position: relative;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;width: 80px;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;height: 80px;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;bottom: 120px;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;background: #444;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 50%;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;left: calc(50% - 40px);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;z-index: 2;<br>
                         <span class="highlight">{{ '}' }}</span><br>
   
-                        <span class="yellow">.container_luz</span> <span class="highlight">{{ '{' }}</span><br>
+                        <span class="yellow">.container_Prueba</span> <span class="highlight">{{ '{' }}</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;position: relative;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;left: calc(50% - 2px);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;bottom: 1%;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;top: -130px;<br>
+                      
                         <span class="highlight">{{ '}' }}</span><br>
                         
                       </code>
                     </p>
                   </div>
                   <div *ngIf="containerText == 2">
-                    <h2>js</h2>
+                    <!-- <p > -->
+                      <code>
+                        
+                        <span class="highlight">@</span><span class="greent">ViewChild</span>(<span class="oragen">'luzFoco'</span><span class="highlight">,{{'{'}}</span>static<span class="highlight">:</span> <span class="celeste">false</span><span class="highlight">{{'}'}}</span>) <span class="celeste">itemFoco</span><span class="highlight">! :</span><span class="verdeBl"> ElementRef</span><span class="highlight">;</span> 
+                        <br>
+                        <br>
+                        <span class="yellow">onHeaderFoco</span>(){{'{'}}<br>
+                        &nbsp;<span class="celeste">this</span><span class="highlight">.</span><span class="cele">comunicationService</span><span class="highlight">.</span><span class="verdeBl">disparadorFoco</span>.subscribe((iten) => {{'{'}} <br>
+                            
+                        &nbsp;&nbsp;if(iten === 6){{'{'}} <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;this.renderer.setStyle(this.itemFoco.nativeElement, &nbsp;&nbsp;&nbsp;&nbsp;'background','rgba(19, 41, 61, 0.5)') <br>
+                      
+                        &nbsp;&nbsp; {{'}'}}else{{'{'}} <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;this.renderer.setStyle(this.itemFoco.nativeElement, <br> &nbsp;&nbsp;&nbsp;&nbsp;'background','rgba(19, 41, 61, 0.8)') <br>
+                        &nbsp;&nbsp;&nbsp;{{'}'}} <br>
+                        &nbsp;&nbsp;{{'}'}} <br>
+                        &nbsp;{{'}'}} <br>
+                      </code>
+                    <!-- </p> -->
                   </div>
                   
                 </div>
