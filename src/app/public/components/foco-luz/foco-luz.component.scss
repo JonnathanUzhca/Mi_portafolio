@@ -88,6 +88,230 @@
 .light.on .bulb span:nth-child(2){
     box-shadow: -20px 20px 0 10px #fff;
 }
+
+
+
+
+
+
+// ////////// foco 1
+
+
+.light.on .bulb1{
+    background: #fff;
+    box-shadow: 0 0 50px #fff,
+    0 0 100px #fff
+    0 0 150px #fff
+    0 0 200px #fff
+    0 0 250px #fff
+    0 0 300px #fff
+    0 0 350px #fff
+
+    ;
+    // width: 100%;
+    // height: 56vh;
+    // margin: 0;
+}
+
+
+
+.bulb1{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    bottom: 600px;
+    background: #444;
+    border-radius: 50%;
+    left: calc(12% - 0px);
+    z-index: 2;
+}
+
+.light.on .bulb1::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 50%;
+    filter: blur(40px);
+}
+
+.bulb1::before{
+    content: '';
+    position: absolute;
+    left: 22.5px;
+    top: -50px;
+    width: 35px;
+    height: 50px;
+    background: #444;
+    border-top: 30px  solid #000;
+    border-radius: 10px;
+}
+
+.light.on .bulb1::before{
+    background: #fff;
+}
+
+.bulb1 span:nth-child(1){
+    position: absolute;
+    top: -16px;
+    left: -4px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    transform: rotate(343deg);
+    border-bottom-right-radius: 40px;
+    box-shadow: 20px 20px 0 10px #444;
+}
+
+.bulb1 span:nth-child(2){
+    position: absolute;
+    top: -16px;
+    right: -4px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    transform: rotate(17deg);
+    border-bottom-left-radius: 40px;
+    box-shadow: -20px 20px 0 10px #444;
+}
+.light.on .bulb1 span:nth-child(1){
+    box-shadow: 20px 20px 0 10px #fff;
+}
+
+.light.on .bulb1 span:nth-child(2){
+    box-shadow: -20px 20px 0 10px #fff;
+}
+
+.wire1{
+    position: relative;
+    left: calc(18% - 2px);
+    // bottom: 1%;
+    top: -600px;
+    width: 4px;
+    height: 19vh;
+    background: #000;
+    z-index: 1;
+}
+
+///////////// fin foco 1
+
+
+
+// ////////// foco 2
+
+
+.light.on .bulb2{
+    background: #fff;
+    box-shadow: 0 0 50px #fff,
+    0 0 100px #fff
+    0 0 150px #fff
+    0 0 200px #fff
+    0 0 250px #fff
+    0 0 300px #fff
+    0 0 350px #fff
+
+    ;
+    // width: 100%;
+    // height: 56vh;
+    // margin: 0;
+}
+
+
+
+.bulb2{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    bottom: 840px;
+    background: #444;
+    border-radius: 50%;
+    left: calc(77% - 0px);
+    z-index: 2;
+}
+
+.light.on .bulb2::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 50%;
+    filter: blur(40px);
+}
+
+.bulb2::before{
+    content: '';
+    position: absolute;
+    left: 22.5px;
+    top: -50px;
+    width: 35px;
+    height: 50px;
+    background: #444;
+    border-top: 30px  solid #000;
+    border-radius: 10px;
+}
+
+.light.on .bulb2::before{
+    background: #fff;
+}
+
+.bulb2 span:nth-child(1){
+    position: absolute;
+    top: -16px;
+    left: -4px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    transform: rotate(343deg);
+    border-bottom-right-radius: 40px;
+    box-shadow: 20px 20px 0 10px #444;
+}
+
+.bulb2 span:nth-child(2){
+    position: absolute;
+    top: -16px;
+    right: -4px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    transform: rotate(17deg);
+    border-bottom-left-radius: 40px;
+    box-shadow: -20px 20px 0 10px #444;
+}
+.light.on .bulb2 span:nth-child(1){
+    box-shadow: 20px 20px 0 10px #fff;
+}
+
+.light.on .bulb2 span:nth-child(2){
+    box-shadow: -20px 20px 0 10px #fff;
+}
+
+.wire2{
+    position: relative;
+    left: calc(83% - 2px);
+    // bottom: 1%;
+    top: -849px;
+    width: 4px;
+    height: 25vh;
+    background: #000;
+    z-index: 1;
+}
+
+/////////////
+
+
+
 .wire{
     position: relative;
     left: calc(50% - 2px);

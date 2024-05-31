@@ -4,9 +4,22 @@
         <span></span>
         <span></span>
     </div>
-
+    <br>
+    <div class="wire1"></div>
+    <div class="bulb1">
+        <span></span>
+        <span></span>
+    </div>
+    <br>
+    <div class="wire2"></div>
+    <div class="bulb2">
+        <span></span>
+        <span></span>
+    </div>
     <div class="switch">
-        <div #myButton><input class="btn" type="checkbox" (change)="onCheckboxChange($event)"></div>
+        <div #myButton><input class="btn" type="checkbox" (change)="onCheckboxChange($event)" title="Click"
+            data-toggle="tooltip" 
+            data-placement="top" ></div>
     </div>
     <audio id="audio">
         <source src="assets/mp3/click.mp3" type="audio/mpeg">

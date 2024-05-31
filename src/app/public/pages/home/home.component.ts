@@ -1,8 +1,9 @@
 import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
 import { DOCUMENT } from '@angular/common';
 import { Component,HostListener, ElementRef, OnInit, ViewChild, Renderer2, QueryList, AfterContentInit, AfterViewInit, Inject } from '@angular/core';
+import { IsLoadingService } from '@service-work/is-loading';
+import * as Aos from 'aos';
 import { ComunicationService } from 'src/app/service/comunication.service';
-
 
 
 @Component({
@@ -11,14 +12,14 @@ import { ComunicationService } from 'src/app/service/comunication.service';
   styleUrls: ['./home.component.scss'],
   animations: [
     trigger('stateChange', [
-      state('state1', style({ transform: 'rotate(0deg)', width: '150px', height: '150px' })),
+      state('state1', style({ transform: 'rotate(0deg)', width: '180px', height: '180px' })),
       state('state2', style({ display: 'none' })),
       transition('state1 => state2', 
-      animate('1s', keyframes([
+      animate('2s', keyframes([
         style({ transform: 'translateY(0)', offset: 0 }),
         style({ transform: 'translateY(10px)', offset: 0.2 }),
         style({ transform: 'translateY(-20px)', offset: 0.4 }),
-        style({ transform: 'translateY(1000px)', offset: 1 })
+        style({ transform: 'translateY(90px)', offset: 1 })
       ]))
       )
     ])
@@ -45,20 +46,22 @@ export class HomeComponent  implements OnInit {
   public slogan : string = 'Frontend y Banckend Designer | Developer';
   public containerText : number = 0;
   public focoContainer : boolean = false;
-
   private scrollLeft = 0;
   private scrollTop = 0;
   
   
   constructor(
     private renderer: Renderer2,
-    private comunicationService: ComunicationService
+    private comunicationService: ComunicationService,
+    private isLoadingService: IsLoadingService,
   ){
   
   }
   @HostListener('window:scroll', ['$event'])
 
   ngOnInit(): void {
+    Aos.init({disable: 'mobile'});
+    Aos.refresh();
     this.onWindowScroll();
     this.onHeaderFoco();
     
@@ -77,7 +80,7 @@ export class HomeComponent  implements OnInit {
     const elementItemName = this.itemName.nativeElement;
     const elemtItemSubName = this.itemSubName.nativeElement;
     const elementItemImg = this.itemImg.nativeElement;
-    if(this.scrollTop > 795){
+    if(this.scrollTop > 725){
       this.renderer.setStyle(element, 'backgroundColor', '#16324F')
       this.renderer.setStyle(element, 'position','fixed')
       this.renderer.setStyle(elemtItem, 'color', 'white')
@@ -86,7 +89,7 @@ export class HomeComponent  implements OnInit {
       this.renderer.setStyle(elemtItem3, 'color', 'white')
       this.renderer.setStyle(elementItemName, 'color', 'white',)
       this.renderer.setStyle(elemtItemSubName, 'color', 'white')
-      this.renderer.setStyle(elementItemName, 'font-size', '25px')
+      this.renderer.setStyle(elementItemName, 'font-size', '22px')
       this.renderer.setStyle(elemtItemSubName, 'color', 'white')
       this.state = 'state2';
     }else{
@@ -114,17 +117,16 @@ export class HomeComponent  implements OnInit {
     }
   }
 
-
-
   onHeaderFoco(){
+
     this.comunicationService.disparadorFoco
     .subscribe((iten) => {
       
       if(iten === 6){
        this.renderer.setStyle(this.itemFoco.nativeElement, 'background','rgba(19, 41, 61, 0.5)')
-
+       
       }else{
-        this.renderer.setStyle(this.itemFoco.nativeElement, 'background','rgba(19, 41, 61, 0.8)')
+        this.renderer.setStyle(this.itemFoco.nativeElement, 'background','rgba(19, 41, 61, 0.9)')
       }
     }
     )
