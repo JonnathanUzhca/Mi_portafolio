@@ -8,6 +8,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { PublicModule } from './public/public.module';
+import { IsLoadingModule } from '@service-work/is-loading';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 @NgModule({
@@ -21,7 +23,10 @@ import { PublicModule } from './public/public.module';
     BrowserAnimationsModule,
     MatButtonModule,
     RouterModule,
-    SharedModule
+    SharedModule,
+    IsLoadingModule,
+    MatProgressBarModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

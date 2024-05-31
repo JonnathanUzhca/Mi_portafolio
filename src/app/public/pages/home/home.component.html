@@ -1,5 +1,6 @@
+<section id="Home"></section>
 <div class="container-menu">
-  <div class="container-sect2" #luzFoco >
+  <div class="container-sect2" #luzFoco>
     <ul class="social-icons">
       <li>
         <a
@@ -27,9 +28,9 @@
       </li>
       <li>
         <a
-          href="https://github.com/JonnathanUzhca"
-          class="social-link"
-          target="_blank"
+        href="https://github.com/JonnathanUzhca"
+        class="social-link"
+        target="_blank"
           ><i class="bi bi-github" aria-hidden="true"></i
         ></a>
       </li>
@@ -40,8 +41,8 @@
       </li>
       <li>
         <a
-          href="https://www.tiktok.com/@jonnathanuzhca?_t=8mc22cFs8OL&_r=1"
-          class="social-link"
+        href="https://www.tiktok.com/@jonnathanuzhca?_t=8mc22cFs8OL&_r=1"
+        class="social-link"
           target="_blank"
           ><i class="bi bi-tiktok" aria-hidden="true"></i
         ></a>
@@ -80,13 +81,12 @@
         <div class="col-lg-6 auto">
           <!-- header  derecho -->
           <div *ngIf="focoContainer == true; else notVisibli">
-            <div #foco >
+            <div #foco>
               <app-foco-luz></app-foco-luz>
             </div>
-          
           </div>
           <ng-template #notVisibli>
-            <div class="container-rigth" >
+            <div class="container-rigth">
               <div class="container-html">
                 <div class="container-title-haeder">
                   <h5 class="text-header-right">
@@ -96,6 +96,9 @@
                         type="button"
                         class="btn btn-secondary btnSecon"
                         (click)="onDataParagram(0)"
+                        title="Click"
+                        data-toggle="tooltip"
+                        data-placement="top"
                       >
                         HTML
                       </button>
@@ -103,6 +106,9 @@
                         type="button"
                         class="btn btn-secondary btnSecon"
                         (click)="onDataParagram(1)"
+                        title="Click"
+                        data-toggle="tooltip"
+                        data-placement="top"
                       >
                         SCSS
                       </button>
@@ -110,109 +116,230 @@
                         type="button"
                         class="btn btn-secondary btnSecon"
                         (click)="onDataParagram(2)"
+                        title="Click"
+                        data-toggle="tooltip"
+                        data-placement="top"
                       >
                         TS
                       </button>
                       <button
-                      style="background-color: rgb(47, 75, 255);"
+                        style="background-color: rgb(47, 75, 255)"
                         type="button"
                         class="btn btn-secondary btnSecon"
                         (click)="onDataParagram(3)"
+                        title="Click"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        swIsLoading="button-one"
                       >
-                      RUN
+                        RUN
                       </button>
                     </div>
                   </h5>
                   <i class="bi bi-chevron-compact-down geo-config"></i>
                 </div>
-                
+
                 <div class="container-paragran">
                   <div *ngIf="containerText == 0">
                     <div class="textConta">
                       <div class="text">
-<!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum accusamus beatae vero doloribus illo unde doloremque, labore dignissimos assumenda reprehenderit sequi dolorem repellat iste voluptatum quibusdam, tempore ut sunt ratione. -->
+                        <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum accusamus beatae vero doloribus illo unde doloremque, labore dignissimos assumenda reprehenderit sequi dolorem repellat iste voluptatum quibusdam, tempore ut sunt ratione. -->
 
                         <code>
-                               <span class="highlight">&lt;!</span>DOCTYPE <span class="highlight">html&gt;</span><br>
-                          <span class="highlight">&lt;</span>html <span class="verde">lang</span><span class="highlight">=</span> <span class="yellow">"en"</span> <span class="highlight">&gt;</span><br>
-                          <span class="highlight">&lt;</span>header<span class="highlight">&gt;</span><br>
-                          &nbsp;&nbsp;<span class="highlight">&lt;</span>meta <span class="verde">charset</span><span class="highlight">=</span> <span class="yellow">"UTF-8"</span> <span class="highlight">/&gt;</span><br>
-                          &nbsp;&nbsp;<span class="highlight">&lt;</span>title<span class="highlight">&gt;Foco de luz  &lt;/</span>title<span class="highlight">&gt;</span><br>
-                          <span class="highlight">&lt;/</span>header<span class="highlight">&gt;</span><br>
-                          <span class="highlight">&lt;</span>body<span class="highlight">&gt;</span><br>
-                      
-                          &nbsp;&nbsp;<span class="highlight">&lt;</span>div <span class="verde">class</span><span class="highlight">=</span> <span class="yellow">"wire_foco"</span> <span class="highlight">&gt;</span><span class="highlight">&lt;/</span>div<span class="highlight">&gt;</span><br>
-                          
-                          &nbsp;&nbsp;<span class="highlight">&lt;</span>div <span class="verde">class</span><span class="highlight">=</span> <span class="yellow">"container_Prueba"</span> <span class="highlight">&gt;</span><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">&lt;</span>div <span class="verde">class</span><span class="highlight">=</span> <span class="yellow">"container_luz"</span> <span class="highlight">&gt;</span><br>
+                          <span class="highlight">&lt;!</span>DOCTYPE
+                          <span class="highlight">html&gt;</span><br />
+                          <span class="highlight">&lt;</span>html
+                          <span class="verde">lang</span
+                          ><span class="highlight">=</span>
+                          <span class="yellow">"en"</span>
+                          <span class="highlight">&gt;</span><br />
+                          <span class="highlight">&lt;</span>header<span
+                            class="highlight"
+                            >&gt;</span
+                          ><br />
+                          &nbsp;&nbsp;<span class="highlight">&lt;</span>meta
+                          <span class="verde">charset</span
+                          ><span class="highlight">=</span>
+                          <span class="yellow">"UTF-8"</span>
+                          <span class="highlight">/&gt;</span><br />
+                          &nbsp;&nbsp;<span class="highlight">&lt;</span
+                          >title<span class="highlight"
+                            >&gt;Foco de luz &lt;/</span
+                          >title<span class="highlight">&gt;</span><br />
+                          <span class="highlight">&lt;/</span>header<span
+                            class="highlight"
+                            >&gt;</span
+                          ><br />
+                          <span class="highlight">&lt;</span>body<span
+                            class="highlight"
+                            >&gt;</span
+                          ><br />
 
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">&lt;</span>span<span class="highlight">&gt;</span><span class="highlight">&lt;/</span>span<span class="highlight">&gt;</span><br>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">&lt;</span>span<span class="highlight">&gt;</span><span class="highlight">&lt;/</span>span<span class="highlight">&gt;</span><br>
+                          &nbsp;&nbsp;<span class="highlight">&lt;</span>div
+                          <span class="verde">class</span
+                          ><span class="highlight">=</span>
+                          <span class="yellow">"wire_foco"</span>
+                          <span class="highlight">&gt;</span
+                          ><span class="highlight">&lt;/</span>div<span
+                            class="highlight"
+                            >&gt;</span
+                          ><br />
 
-                          &nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">&lt;/</span>div<span class="highlight">&gt;</span><br>
-                          &nbsp;&nbsp;<span class="highlight">&lt;/</span>div<span class="highlight">&gt;</span><br>
-                      
-                          <span class="highlight">&lt;/</span>body<span class="highlight">&gt;</span><br>
-                          <span class="highlight">&lt;/</span>html<span class="highlight">&gt;</span><br>
+                          &nbsp;&nbsp;<span class="highlight">&lt;</span>div
+                          <span class="verde">class</span
+                          ><span class="highlight">=</span>
+                          <span class="yellow">"container_Prueba"</span>
+                          <span class="highlight">&gt;</span><br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight"
+                            >&lt;</span
+                          >div <span class="verde">class</span
+                          ><span class="highlight">=</span>
+                          <span class="yellow">"container_luz"</span>
+                          <span class="highlight">&gt;</span><br />
+
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                            class="highlight"
+                            >&lt;</span
+                          >span<span class="highlight">&gt;</span
+                          ><span class="highlight">&lt;/</span>span<span
+                            class="highlight"
+                            >&gt;</span
+                          ><br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                            class="highlight"
+                            >&lt;</span
+                          >span<span class="highlight">&gt;</span
+                          ><span class="highlight">&lt;/</span>span<span
+                            class="highlight"
+                            >&gt;</span
+                          ><br />
+
+                          &nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight"
+                            >&lt;/</span
+                          >div<span class="highlight">&gt;</span><br />
+                          &nbsp;&nbsp;<span class="highlight">&lt;/</span
+                          >div<span class="highlight">&gt;</span><br />
+
+                          <span class="highlight">&lt;/</span>body<span
+                            class="highlight"
+                            >&gt;</span
+                          ><br />
+                          <span class="highlight">&lt;/</span>html<span
+                            class="highlight"
+                            >&gt;</span
+                          ><br />
                         </code>
                       </div>
-                      <div class="beside"><span #tw3></span> </div>
+                      <div class="beside"><span #tw3></span></div>
                     </div>
                   </div>
                   <div *ngIf="containerText == 1">
-                    <p >
+                    <p>
                       <code>
-                        <span class="yellow">.container_luz</span> <span class="highlight">{{ '{' }}</span><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;position: relative;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;width: 80px;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;height: 80px;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;bottom: 120px;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;background: #444;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 50%;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;left: calc(50% - 40px);<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;z-index: 2;<br>
-                        <span class="highlight">{{ '}' }}</span><br>
-  
-                        <span class="yellow">.container_Prueba</span> <span class="highlight">{{ '{' }}</span><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;position: relative;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;left: calc(50% - 2px);<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;bottom: 1%;<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;top: -130px;<br>
-                      
-                        <span class="highlight">{{ '}' }}</span><br>
-                        
+                        <span class="yellow">.container_luz</span>
+                        <span class="highlight">{{ "{" }}</span
+                        ><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;position: relative;<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;width: 80px;<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;height: 80px;<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;bottom: 120px;<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;background: #444;<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 50%;<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;left: calc(50% - 40px);<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;z-index: 2;<br />
+                        <span class="highlight">{{ "}" }}</span
+                        ><br />
+
+                        <span class="yellow">.container_Prueba</span>
+                        <span class="highlight">{{ "{" }}</span
+                        ><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;position: relative;<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;left: calc(50% - 2px);<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;bottom: 1%;<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;top: -130px;<br />
+
+                        <span class="highlight">{{ "}" }}</span
+                        ><br />
                       </code>
                     </p>
                   </div>
                   <div *ngIf="containerText == 2">
                     <!-- <p > -->
-                      <code>
-                        
-                        <span class="highlight">@</span><span class="greent">ViewChild</span>(<span class="oragen">'luzFoco'</span><span class="highlight">,{{'{'}}</span>static<span class="highlight">:</span> <span class="celeste">false</span><span class="highlight">{{'}'}}</span>) <span class="celeste">itemFoco</span><span class="highlight">! :</span><span class="verdeBl"> ElementRef</span><span class="highlight">;</span> 
-                        <br>
-                        <br>
-                        <span class="yellow">onHeaderFoco</span>(){{'{'}}<br>
-                        &nbsp;<span class="celeste">this</span><span class="highlight">.</span><span class="cele">comunicationService</span><span class="highlight">.</span><span class="verdeBl">disparadorFoco</span>.subscribe((iten) => {{'{'}} <br>
-                            
-                        &nbsp;&nbsp;if(iten === 6){{'{'}} <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;this.renderer.setStyle(this.itemFoco.nativeElement, &nbsp;&nbsp;&nbsp;&nbsp;'background','rgba(19, 41, 61, 0.5)') <br>
-                      
-                        &nbsp;&nbsp; {{'}'}}else{{'{'}} <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;this.renderer.setStyle(this.itemFoco.nativeElement, <br> &nbsp;&nbsp;&nbsp;&nbsp;'background','rgba(19, 41, 61, 0.8)') <br>
-                        &nbsp;&nbsp;&nbsp;{{'}'}} <br>
-                        &nbsp;&nbsp;{{'}'}} <br>
-                        &nbsp;{{'}'}} <br>
-                      </code>
+                    <code>
+                      <span class="highlight">@</span
+                      ><span class="greent">ViewChild</span>(<span
+                        class="oragen"
+                        >'luzFoco'</span
+                      ><span class="highlight">,{{ "{" }}</span
+                      >static<span class="highlight">:</span>
+                      <span class="celeste">false</span
+                      ><span class="highlight">{{ "}" }}</span
+                      >) <span class="celeste">itemFoco</span
+                      ><span class="highlight">! :</span
+                      ><span class="verdeBl"> ElementRef</span
+                      ><span class="highlight">;</span>
+                      <br />
+                      <br />
+                      <span class="yellow">onHeaderFoco</span>(){{ "{" }}<br />
+                      &nbsp;<span class="celeste">this</span
+                      ><span class="highlight">.</span
+                      ><span class="cele">comunicationService</span
+                      ><span class="highlight">.</span
+                      ><span class="verdeBl">disparadorFoco</span>
+                      <span class="highlight">.</span
+                      ><span class="yellow">subcribe</span>((<span class="cele"
+                        >iten</span
+                      >) <span class="celeste">=></span> {{ "{" }} <br />
+
+                      &nbsp;&nbsp;if(<span class="highlight">!</span
+                      ><span class="cele">iten</span>){{ "{" }} <br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;<span class="celeste">this</span
+                      ><span class="highlight">.</span
+                      ><span class="cele">renderer</span
+                      ><span class="highlight">.</span
+                      ><span class="yellow">setStyle</span>(<span
+                        class="celeste"
+                        >this</span
+                      ><span class="highlight">.</span
+                      ><span class="cele">itemFoco</span
+                      ><span class="highlight">.</span
+                      ><span class="cele">nativeElement</span
+                      ><span class="highlight">,</span
+                      ><br />&nbsp;&nbsp;&nbsp;&nbsp;
+                      <span class="oragen">'background'</span
+                      ><span class="highlight">,</span
+                      ><span class="oragen">'rgba(19, 41, 61, 0.5)'</span>)
+                      <br />
+
+                      &nbsp;&nbsp; {{ "}" }}else{{ "{" }} <br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;<span class="celeste">this</span
+                      ><span class="highlight">.</span
+                      ><span class="cele">renderer</span
+                      ><span class="highlight">.</span
+                      ><span class="yellow">setStyle</span>(<span
+                        class="celeste"
+                        >this</span
+                      ><span class="highlight">.</span
+                      ><span class="cele">itemFoco</span
+                      ><span class="highlight">.</span
+                      ><span class="cele">nativeElement</span
+                      ><span class="highlight">,</span
+                      ><br />&nbsp;&nbsp;&nbsp;&nbsp;
+                      <span class="oragen">'background'</span
+                      ><span class="highlight">,</span
+                      ><span class="oragen">'rgba(19, 41, 61, 0.8)'</span>)
+                      <br />
+                      &nbsp;&nbsp;&nbsp;{{ "}" }} <br />
+                      &nbsp;&nbsp;{{ "}" }} <br />
+                      &nbsp;{{ "}" }} <br />
+                    </code>
                     <!-- </p> -->
                   </div>
-                  
                 </div>
-                
               </div>
-              
             </div>
           </ng-template>
-          
+
           <!-- fin -->
         </div>
       </div>
@@ -232,9 +359,6 @@
     <li class="item">
       <a href="#About" class="nav-link" #item1>About</a>
     </li>
-    <!-- </ul>
-  <ul class="menu"> -->
-
     <img
       #itemImg
       [@stateChange]="state"
@@ -248,8 +372,6 @@
       <p #itemSubName>Developer</p>
     </li>
 
-    <!-- </ul>
-  <ul class="menu"> -->
     <li class="item">
       <a href="#Proyectos" class="nav-link" #item2>Proyectos</a>
     </li>
@@ -259,9 +381,17 @@
   </ul>
 </header>
 
-<div style="height: 5222px">
+<section id="About">
+  <div class="container-About"  style="height: 1150px;">
+    <h1>About</h1>
+  </div>
   
-</div>
+</section>
 
+<section id="Proyectos" style="height: 1150px;">
+  <h1>Proyectos</h1>
+</section>
 
-
+<section id="Contactos" style="height: 1150px;">
+  <h1>Contactos</h1>
+</section>
