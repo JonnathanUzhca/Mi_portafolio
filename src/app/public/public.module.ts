@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { PublicComponent } from './public.component';
 import { PublicRoutingModule } from './public-routing.module';
 import { SharedModule } from '../shared/shared.module';
+import { ComponentsModule } from './components/components.module';
 // import { RouterModule } from '@angular/router';
 
 
@@ -13,7 +14,8 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     PublicRoutingModule,
-    SharedModule
+    SharedModule,
+    ComponentsModule
   ]
 })
 export class PublicModule { }

@@ -1,7 +1,10 @@
 import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
-import { Component,HostListener, ElementRef, OnInit, ViewChild, Renderer2, QueryList, AfterContentInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component,HostListener, ElementRef, OnInit, ViewChild, Renderer2, QueryList, AfterContentInit, AfterViewInit, Inject } from '@angular/core';
+import { ComunicationService } from 'src/app/service/comunication.service';
 
-
+// import Typewriter from 't-writer.js';
+import Typewriter from 'typewriter-effect/dist/core';
 
 
 
@@ -34,26 +37,33 @@ export class HomeComponent  implements OnInit {
   @ViewChild('itemName',{static:true}) itemName! : ElementRef;
   @ViewChild('itemSubName',{static:true}) itemSubName! : ElementRef;
   @ViewChild('itemImg', {static:true}) itemImg! : ElementRef;
+  @ViewChild('luzFoco', {static: false}) itemFoco! : ElementRef;
+ 
+  // @ViewChild('tw3') typewriterElement3;
+
 
   public state = '';
   public profession :string = 'Ingeniería de sistemas';
   public paragran : string = 'Soy programador junior con experiencia en la creación y desarrollo de aplicaciones web completas. Desde la interfaz de usuario hasta la lógica del servidor.';
   public slogan : string = 'Frontend y Banckend Designer | Developer';
   public containerText : number = 0;
-  // public textContainer : string = '';
+  public focoContainer : boolean = false;
 
   private scrollLeft = 0;
   private scrollTop = 0;
   
   
-  constructor(private renderer: Renderer2){
-    
-
+  constructor(
+    private renderer: Renderer2,
+    private comunicationService: ComunicationService
+  ){
+  
   }
   @HostListener('window:scroll', ['$event'])
 
   ngOnInit(): void {
     this.onWindowScroll();
+    this.onHeaderFoco();
    
     
   }
@@ -99,9 +109,27 @@ export class HomeComponent  implements OnInit {
       this.containerText = 0;
     }else if(numer == 1){
       this.containerText = 1;
-    }else{
+    }else if(numer == 2){
       this.containerText = 2;
+    }else{
+      this.focoContainer = true;
     }
+  }
+
+
+
+  onHeaderFoco(){
+    this.comunicationService.disparadorFoco
+    .subscribe((iten) => {
+      console.log(iten)
+      if(iten === 6){
+       this.renderer.setStyle(this.itemFoco.nativeElement, 'background','rgba(19, 41, 61, 0.5)')
+
+      }else{
+        this.renderer.setStyle(this.itemFoco.nativeElement, 'background','rgba(19, 41, 61, 0.8)')
+      }
+    }
+    )
   }
   
 

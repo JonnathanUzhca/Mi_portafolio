@@ -1,5 +1,5 @@
 <div class="container-menu">
-  <div class="container-sect2">
+  <div class="container-sect2" #luzFoco >
     <ul class="social-icons">
       <li>
         <a
@@ -79,80 +79,103 @@
         </div>
         <div class="col-lg-6 auto">
           <!-- header  derecho -->
-          <div class="container-rigth">
-            <div class="container-html">
-              <div class="container-title-haeder">
-                <h5 class="text-header-right">
-                  <i class="bi bi-gear geo-config"></i>
-                  <div class="btn-group btGroup" role="group">
-                    <button
-                      type="button"
-                      class="btn btn-secondary btnSecon"
-                      (click)="onDataParagram(0)"
-                    >
-                      HTML
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-secondary btnSecon"
-                      (click)="onDataParagram(1)"
-                    >
-                      SCSS
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-secondary btnSecon"
-                      (click)="onDataParagram(2)"
-                    >
-                      JS
-                    </button>
+          <div *ngIf="focoContainer == true; else notVisibli">
+            <div #foco >
+              <app-foco-luz></app-foco-luz>
+            </div>
+          
+          </div>
+          <ng-template #notVisibli>
+            <div class="container-rigth" >
+              <div class="container-html">
+                <div class="container-title-haeder">
+                  <h5 class="text-header-right">
+                    <i class="bi bi-gear geo-config"></i>
+                    <div class="btn-group btGroup" role="group">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btnSecon"
+                        (click)="onDataParagram(0)"
+                      >
+                        HTML
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary btnSecon"
+                        (click)="onDataParagram(1)"
+                      >
+                        SCSS
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary btnSecon"
+                        (click)="onDataParagram(2)"
+                      >
+                        JS
+                      </button>
+                      <button
+                      style="background-color: rgb(47, 75, 255);"
+                        type="button"
+                        class="btn btn-secondary btnSecon"
+                        (click)="onDataParagram(3)"
+                      >
+                      RUN
+                      </button>
+                    </div>
+                  </h5>
+                  <i class="bi bi-chevron-compact-down geo-config"></i>
+                </div>
+                
+                <div class="container-paragran">
+                  <div *ngIf="containerText == 0">
+                    <div class="textConta">
+                      <!-- <p class="text"> -->
+                        <!-- <code> -->
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea in, neque repellendus adipisci nemo aspernatur ullam consequatur quo culpa esse itaque tempora? Voluptas similique libero fugiat, rerum enim molestias nesciunt!
+                          <!-- <span class="highlight">&lt;!</span>DOCTYPE <span class="highlight">html&gt;</span><br>
+                          <span class="highlight">&lt;</span>html <span class="verde">lang</span><span class="highlight">=</span> <span class="yellow">"en"</span> <span class="highlight">&gt;</span><br>
+                          <span class="highlight">&lt;</span>header<span class="highlight">&gt;</span><br>
+                          &nbsp;&nbsp;<span class="highlight">&lt;</span>meta <span class="verde">charset</span><span class="highlight">=</span> <span class="yellow">"UTF-8"</span> <span class="highlight">/&gt;</span><br>
+                          &nbsp;&nbsp;<span class="highlight">&lt;</span>title<span class="highlight">&gt;Foco de luz  &lt;/</span>title<span class="highlight">&gt;</span><br>
+                          <span class="highlight">&lt;/</span>header<span class="highlight">&gt;</span><br>
+                          <span class="highlight">&lt;</span>body<span class="highlight">&gt;</span><br>
+                      
+  
+                          &nbsp;&nbsp;<span class="highlight">&lt;</span>div <span class="verde">class</span><span class="highlight">=</span> <span class="yellow">"container_Prueba"</span> <span class="highlight">&gt;</span><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">&lt;</span>div <span class="verde">class</span><span class="highlight">=</span> <span class="yellow">"container_luz"</span> <span class="highlight">&gt;</span><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">&lt;/</span>div<span class="highlight">&gt;</span><br>
+                          &nbsp;&nbsp;<span class="highlight">&lt;/</span>div<span class="highlight">&gt;</span><br>
+                      
+                          <span class="highlight">&lt;/</span>body<span class="highlight">&gt;</span><br>
+                          <span class="highlight">&lt;/</span>html<span class="highlight">&gt;</span><br> -->
+                        <!-- </code> -->
+                      <!-- </p> -->
+                      <div class="beside"><span #tw3></span> </div>
+                    </div>
                   </div>
-                </h5>
-                <i class="bi bi-chevron-compact-down geo-config"></i>
-              </div>
-              <div class="container-paragran">
-                <div *ngIf="containerText == 0">
-                  <div class="container textConta">
+                  <div *ngIf="containerText == 1">
                     <p >
                       <code>
-                        <span class="highlight">&lt;!</span>DOCTYPE <span class="highlight">html&gt;</span><br>
-                        <span class="highlight">&lt;</span>html <span class="verde">lang</span><span class="highlight">=</span> <span class="yellow">"en"</span> <span class="highlight">&gt;</span><br>
-                        <span class="highlight">&lt;</span>header<span class="highlight">&gt;</span><br>
-                        &nbsp;&nbsp;<span class="highlight">&lt;</span>meta <span class="verde">charset</span><span class="highlight">=</span> <span class="yellow">"UTF-8"</span> <span class="highlight">/&gt;</span><br>
-                        &nbsp;&nbsp;<span class="highlight">&lt;</span>title<span class="highlight">&gt;Foco de luz  &lt;/</span>title<span class="highlight">&gt;</span><br>
-                        <span class="highlight">&lt;/</span>header<span class="highlight">&gt;</span><br>
-                        <span class="highlight">&lt;</span>body<span class="highlight">&gt;</span><br>
-                    
-
-                        &nbsp;&nbsp;<span class="highlight">&lt;</span>div <span class="verde">class</span><span class="highlight">=</span> <span class="yellow">"container_Prueba"</span> <span class="highlight">&gt;</span><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">&lt;</span>div <span class="verde">class</span><span class="highlight">=</span> <span class="yellow">"container_luz"</span> <span class="highlight">&gt;</span><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">&lt;/</span>div<span class="highlight">&gt;</span><br>
-                        &nbsp;&nbsp;<span class="highlight">&lt;/</span>div<span class="highlight">&gt;</span><br>
-                    
-                        <span class="highlight">&lt;/</span>body<span class="highlight">&gt;</span><br>
-                        <span class="highlight">&lt;/</span>html<span class="highlight">&gt;</span><br>
+                        <span class="yellow">.container_Prueba</span> <span class="highlight">{{ '{' }}</span><br>
+                        <span class="highlight">{{ '}' }}</span><br>
+  
+                        <span class="yellow">.container_luz</span> <span class="highlight">{{ '{' }}</span><br>
+                        <span class="highlight">{{ '}' }}</span><br>
+                        
                       </code>
                     </p>
                   </div>
+                  <div *ngIf="containerText == 2">
+                    <h2>js</h2>
+                  </div>
+                  
                 </div>
-                <div *ngIf="containerText == 1">
-                  <p >
-                    <code>
-                      <span class="yellow">.container_Prueba</span> <span class="highlight">{{ '{' }}</span><br>
-                      <span class="highlight">{{ '}' }}</span><br>
-
-                      <span class="yellow">.container_luz</span> <span class="highlight">{{ '{' }}</span><br>
-                      <span class="highlight">{{ '}' }}</span><br>
-                      
-                    </code>
-                  </p>
-                </div>
-                <div *ngIf="containerText == 2">
-                  <h2>js</h2>
-                </div>
+                
               </div>
+              
             </div>
-          </div>
+          </ng-template>
+          
           <!-- fin -->
         </div>
       </div>
@@ -200,6 +223,7 @@
 </header>
 
 <div style="height: 5222px">
+  
 </div>
 
 

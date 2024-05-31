@@ -1,0 +1,20 @@
+<div #foco class="light">
+    <div class="wire"></div>
+    <div class="bulb">
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="switch">
+        <div #myButton><input class="btn" type="checkbox" (change)="onCheckboxChange($event)"></div>
+    </div>
+    <audio id="audio">
+        <source src="assets/mp3/click.mp3" type="audio/mpeg">
+    </audio>
+    <!-- <script>
+        let btn = document.querySelector('.btn');
+        let body = document.querySelector('body');
+        btn.classList.toggle('on');
+    </script> -->
+</div>
+
