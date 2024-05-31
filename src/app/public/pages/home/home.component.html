@@ -1,128 +1,267 @@
 <div class="container-menu">
-  <div class="container-sect2">
-      <ul class="social-icons">
-        <li>
-          <a href="https://www.facebook.com/tatan.uzhca/?viewas=100000686899395&locale=es_LA" class="social-link" target="_blank"
-            ><i class="bi bi-facebook" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://myaccount.google.com/profile/profiles-summary?hl=es_419&utm_source=OGB&utm_medium=act" class="social-link" target="_blank"
-            ><i class="bi bi-google" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/jonnathan0106/" class="social-link" target="_blank"
-            ><i class="bi bi-instagram" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://github.com/JonnathanUzhca" class="social-link" target="_blank"
-            ><i class="bi bi-github" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://wa.link/8c3n58" class="social-link" target="_blank"
-            ><i class="bi bi-whatsapp" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.tiktok.com/@jonnathanuzhca?_t=8mc22cFs8OL&_r=1" class="social-link" target="_blank"
-            ><i class="bi bi-tiktok" aria-hidden="true"></i
-          ></a>
-        </li>
-      </ul>
-      <div class="header-content">
-        <h4 class="header-subtitle">Hola, Yo soy</h4>
-        <h1 class="header-title">Jonnathan Uzhca</h1>
-        <h6 class="header-mono">Frondend y Banckend Designer | Developer</h6>
-        <p>
-          Soy programador junior con experiencia en la creación y desarrollo de
-          aplicaciones web completas. Desde la interfaz
-          de usuario hasta la lógica del servidor.
-        </p>
-        <button class="btn btn-primary btn-rounded">
-          <i class="ti-printer pr-2"></i>Leer mas
-        </button>
+  <div class="container-sect2" #luzFoco >
+    <ul class="social-icons">
+      <li>
+        <a
+          href="https://www.facebook.com/tatan.uzhca/?viewas=100000686899395&locale=es_LA"
+          class="social-link"
+          target="_blank"
+          ><i class="bi bi-facebook" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://myaccount.google.com/profile/profiles-summary?hl=es_419&utm_source=OGB&utm_medium=act"
+          class="social-link"
+          target="_blank"
+          ><i class="bi bi-google" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://www.instagram.com/jonnathan0106/"
+          class="social-link"
+          target="_blank"
+          ><i class="bi bi-instagram" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://github.com/JonnathanUzhca"
+          class="social-link"
+          target="_blank"
+          ><i class="bi bi-github" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://wa.link/8c3n58" class="social-link" target="_blank"
+          ><i class="bi bi-whatsapp" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://www.tiktok.com/@jonnathanuzhca?_t=8mc22cFs8OL&_r=1"
+          class="social-link"
+          target="_blank"
+          ><i class="bi bi-tiktok" aria-hidden="true"></i
+        ></a>
+      </li>
+    </ul>
+    <div class="header-content container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="container-left">
+            <h4 class="header-subtitle">Hola, Yo soy</h4>
+            <h1 class="header-title">{{ profession }}</h1>
+
+            <div class="content-slogan">
+              <ul class="slogan">
+                <li class="slogan-li">
+                  Frontend Designer <span class="span1">|</span> Developer
+                </li>
+                <li class="slogan-li">
+                  Banckend Designer <span class="span2">|</span> Developer
+                </li>
+                <li class="slogan-li">
+                  Aplicaciones Cross <span class="span3"> - </span> Platform
+                </li>
+              </ul>
+            </div>
+            <br />
+            <br />
+            <p>
+              {{ paragran }}
+            </p>
+            <button class="btn btn-primary">
+              <i class="ti-printer pr-2"></i>Leer mas
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6 auto">
+          <!-- header  derecho -->
+          <div *ngIf="focoContainer == true; else notVisibli">
+            <div #foco >
+              <app-foco-luz></app-foco-luz>
+            </div>
+          
+          </div>
+          <ng-template #notVisibli>
+            <div class="container-rigth" >
+              <div class="container-html">
+                <div class="container-title-haeder">
+                  <h5 class="text-header-right">
+                    <i class="bi bi-gear geo-config"></i>
+                    <div class="btn-group btGroup" role="group">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btnSecon"
+                        (click)="onDataParagram(0)"
+                      >
+                        HTML
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary btnSecon"
+                        (click)="onDataParagram(1)"
+                      >
+                        SCSS
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary btnSecon"
+                        (click)="onDataParagram(2)"
+                      >
+                        TS
+                      </button>
+                      <button
+                      style="background-color: rgb(47, 75, 255);"
+                        type="button"
+                        class="btn btn-secondary btnSecon"
+                        (click)="onDataParagram(3)"
+                      >
+                      RUN
+                      </button>
+                    </div>
+                  </h5>
+                  <i class="bi bi-chevron-compact-down geo-config"></i>
+                </div>
+                
+                <div class="container-paragran">
+                  <div *ngIf="containerText == 0">
+                    <div class="textConta">
+                      <div class="text">
+<!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum accusamus beatae vero doloribus illo unde doloremque, labore dignissimos assumenda reprehenderit sequi dolorem repellat iste voluptatum quibusdam, tempore ut sunt ratione. -->
+
+                        <code>
+                               <span class="highlight">&lt;!</span>DOCTYPE <span class="highlight">html&gt;</span><br>
+                          <span class="highlight">&lt;</span>html <span class="verde">lang</span><span class="highlight">=</span> <span class="yellow">"en"</span> <span class="highlight">&gt;</span><br>
+                          <span class="highlight">&lt;</span>header<span class="highlight">&gt;</span><br>
+                          &nbsp;&nbsp;<span class="highlight">&lt;</span>meta <span class="verde">charset</span><span class="highlight">=</span> <span class="yellow">"UTF-8"</span> <span class="highlight">/&gt;</span><br>
+                          &nbsp;&nbsp;<span class="highlight">&lt;</span>title<span class="highlight">&gt;Foco de luz  &lt;/</span>title<span class="highlight">&gt;</span><br>
+                          <span class="highlight">&lt;/</span>header<span class="highlight">&gt;</span><br>
+                          <span class="highlight">&lt;</span>body<span class="highlight">&gt;</span><br>
+                      
+                          &nbsp;&nbsp;<span class="highlight">&lt;</span>div <span class="verde">class</span><span class="highlight">=</span> <span class="yellow">"wire_foco"</span> <span class="highlight">&gt;</span><span class="highlight">&lt;/</span>div<span class="highlight">&gt;</span><br>
+                          
+                          &nbsp;&nbsp;<span class="highlight">&lt;</span>div <span class="verde">class</span><span class="highlight">=</span> <span class="yellow">"container_Prueba"</span> <span class="highlight">&gt;</span><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">&lt;</span>div <span class="verde">class</span><span class="highlight">=</span> <span class="yellow">"container_luz"</span> <span class="highlight">&gt;</span><br>
+
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">&lt;</span>span<span class="highlight">&gt;</span><span class="highlight">&lt;/</span>span<span class="highlight">&gt;</span><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">&lt;</span>span<span class="highlight">&gt;</span><span class="highlight">&lt;/</span>span<span class="highlight">&gt;</span><br>
+
+                          &nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight">&lt;/</span>div<span class="highlight">&gt;</span><br>
+                          &nbsp;&nbsp;<span class="highlight">&lt;/</span>div<span class="highlight">&gt;</span><br>
+                      
+                          <span class="highlight">&lt;/</span>body<span class="highlight">&gt;</span><br>
+                          <span class="highlight">&lt;/</span>html<span class="highlight">&gt;</span><br>
+                        </code>
+                      </div>
+                      <div class="beside"><span #tw3></span> </div>
+                    </div>
+                  </div>
+                  <div *ngIf="containerText == 1">
+                    <p >
+                      <code>
+                        <span class="yellow">.container_luz</span> <span class="highlight">{{ '{' }}</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;position: relative;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;width: 80px;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;height: 80px;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;bottom: 120px;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;background: #444;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 50%;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;left: calc(50% - 40px);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;z-index: 2;<br>
+                        <span class="highlight">{{ '}' }}</span><br>
+  
+                        <span class="yellow">.container_Prueba</span> <span class="highlight">{{ '{' }}</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;position: relative;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;left: calc(50% - 2px);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;bottom: 1%;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;top: -130px;<br>
+                      
+                        <span class="highlight">{{ '}' }}</span><br>
+                        
+                      </code>
+                    </p>
+                  </div>
+                  <div *ngIf="containerText == 2">
+                    <!-- <p > -->
+                      <code>
+                        
+                        <span class="highlight">@</span><span class="greent">ViewChild</span>(<span class="oragen">'luzFoco'</span><span class="highlight">,{{'{'}}</span>static<span class="highlight">:</span> <span class="celeste">false</span><span class="highlight">{{'}'}}</span>) <span class="celeste">itemFoco</span><span class="highlight">! :</span><span class="verdeBl"> ElementRef</span><span class="highlight">;</span> 
+                        <br>
+                        <br>
+                        <span class="yellow">onHeaderFoco</span>(){{'{'}}<br>
+                        &nbsp;<span class="celeste">this</span><span class="highlight">.</span><span class="cele">comunicationService</span><span class="highlight">.</span><span class="verdeBl">disparadorFoco</span>.subscribe((iten) => {{'{'}} <br>
+                            
+                        &nbsp;&nbsp;if(iten === 6){{'{'}} <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;this.renderer.setStyle(this.itemFoco.nativeElement, &nbsp;&nbsp;&nbsp;&nbsp;'background','rgba(19, 41, 61, 0.5)') <br>
+                      
+                        &nbsp;&nbsp; {{'}'}}else{{'{'}} <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;this.renderer.setStyle(this.itemFoco.nativeElement, <br> &nbsp;&nbsp;&nbsp;&nbsp;'background','rgba(19, 41, 61, 0.8)') <br>
+                        &nbsp;&nbsp;&nbsp;{{'}'}} <br>
+                        &nbsp;&nbsp;{{'}'}} <br>
+                        &nbsp;{{'}'}} <br>
+                      </code>
+                    <!-- </p> -->
+                  </div>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+          </ng-template>
+          
+          <!-- fin -->
+        </div>
       </div>
+    </div>
   </div>
 </div>
 
 <header id="Header" #myElementRef>
   <input type="checkbox" id="menu" />
   <label for="menu">
-    <img src="assets/img/icons/menu.png" class="menu-icon" alt="">
+    <img src="assets/img/icons/menu.png" class="menu-icon" alt="" />
   </label>
   <ul class="menu">
     <li class="item">
       <a href="#Home" class="nav-link" #item>Home</a>
     </li>
     <li class="item">
-      <a href="#About" class="nav-link" #item>About</a>
+      <a href="#About" class="nav-link" #item1>About</a>
     </li>
-  <!-- </ul>
+    <!-- </ul>
   <ul class="menu"> -->
-    
-      <img src="assets/img/jonathan01.png" alt="" class="brand-img" >
-      <li class="item-Name">
-          <h5 #item>Jonnathan Uzhca</h5>
-          <p #item>Web Designer</p>
-      </li>
-  
-  <!-- </ul>
+
+    <img
+      #itemImg
+      [@stateChange]="state"
+      src="assets/img/jonathan01.png"
+      alt=""
+      class="brand-img"
+    />
+
+    <li class="item-Name">
+      <h5 #itemName>Jonnathan Uzhca</h5>
+      <p #itemSubName>Developer</p>
+    </li>
+
+    <!-- </ul>
   <ul class="menu"> -->
     <li class="item">
-      <a href="#Proyectos" class="nav-link" #item>Proyectos</a>
+      <a href="#Proyectos" class="nav-link" #item2>Proyectos</a>
     </li>
     <li class="item">
-      <a href="#Contactos" class="nav-link" #item>Contactos</a>
+      <a href="#Contactos" class="nav-link" #item3>Contactos</a>
     </li>
   </ul>
-  
-
 </header>
 
-<div style="height: 5222px;">
-
+<div style="height: 5222px">
+  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
