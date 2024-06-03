@@ -15,11 +15,11 @@ import { ComunicationService } from 'src/app/service/comunication.service';
       state('state1', style({ transform: 'rotate(0deg)', width: '180px', height: '180px' })),
       state('state2', style({ display: 'none' })),
       transition('state1 => state2', 
-      animate('2s', keyframes([
+      animate('1s', keyframes([
         style({ transform: 'translateY(0)', offset: 0 }),
         style({ transform: 'translateY(10px)', offset: 0.2 }),
         style({ transform: 'translateY(-20px)', offset: 0.4 }),
-        style({ transform: 'translateY(90px)', offset: 1 })
+        style({ transform: 'translateY(10px)', offset: 1 })
       ]))
       )
     ])
@@ -80,9 +80,18 @@ export class HomeComponent  implements OnInit {
     const elementItemName = this.itemName.nativeElement;
     const elemtItemSubName = this.itemSubName.nativeElement;
     const elementItemImg = this.itemImg.nativeElement;
+
+    // if(this.scrollTop > 250){
+    //   // this.renderer.setStyle(element, 'position','relative')
+    //   // this.renderer.setStyle(element, 'position','none')
+    //   this.state = 'state2';
+      
+    // }else
+
     if(this.scrollTop > 725){
       this.renderer.setStyle(element, 'backgroundColor', '#16324F')
       this.renderer.setStyle(element, 'position','fixed')
+      this.renderer.setStyle(element, 'z-index', '1000' )
       this.renderer.setStyle(elemtItem, 'color', 'white')
       this.renderer.setStyle(elemtItem1, 'color', 'white')
       this.renderer.setStyle(elemtItem2, 'color', 'white')
@@ -91,7 +100,9 @@ export class HomeComponent  implements OnInit {
       this.renderer.setStyle(elemtItemSubName, 'color', 'white')
       this.renderer.setStyle(elementItemName, 'font-size', '22px')
       this.renderer.setStyle(elemtItemSubName, 'color', 'white')
+      
       this.state = 'state2';
+      // this.renderer.setStyle(elementItemImg, 'display', 'initial')
     }else{
           this.renderer.setStyle(element, 'backgroundColor', 'transparent')
           this.renderer.setStyle(element, 'position','relative')
