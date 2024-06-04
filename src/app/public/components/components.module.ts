@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { FocoLuzComponent } from './foco-luz/foco-luz.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
+import { ProyectComponent } from './proyect/proyect.component';
 
 
 
 @NgModule({
   declarations: [
     FocoLuzComponent,
-    AboutComponent
+    AboutComponent,
+    ProyectComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { AboutComponent } from './about/about.component';
   ],
   exports: [
     FocoLuzComponent,
-    AboutComponent
+    AboutComponent,
+    ProyectComponent
   ]
 })
 export class ComponentsModule { }
