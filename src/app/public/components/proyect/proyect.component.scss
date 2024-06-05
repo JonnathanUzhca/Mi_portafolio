@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-proyect-all{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    font-size: 40px;
+    text-align: center;
+    // position: absolute;
+    // padding: 0px 435px;
+    // margin-bottom:224px;
+    // left: 55%;
+    // font-family: ;
+
+}
+
+.container-proyect-all:hover{
+    .title-section{
+        background-size: 20% 6px;
+    }
+
+}
+
+.title-section{
+    
+    background-image: linear-gradient(90deg, #3E92CC, #3E92CC, #3E92CC);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    margin: 40px;
+    background-size: 0% 5px;
+    background-position: center bottom;
+    transition: background-size 700ms  ease-in-out;
+}
+
+.subtitle{
+    font-size: 20px;
+}
+
+
+.img-proyect{
+    overflow-x: hidden;
+    // height: 10% !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-image: url('/assets/img/proyecto/proyecto.png');
+    
+}
+
+img{
+    background-position: center;   
+    width: 100%;
+    height: 470px;
+    background-size: cover; /* Cubre todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    // transition: background-size 700ms ease; /* Transición suave para la transformación */
+    margin: 0; 
+    padding: 0;
+    // cursor: pointer;
+}
+
+.container-text-proyec{
+    position: absolute;
+    background-color: rgba(19, 41, 61, 0.7);
+    height: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    color: white;  
+    text-align: center;
+    padding: 20% 7%;
+    transition:  opacity  0.6s  ease-in-out;
+    h2{
+        font-size: 42px;
+    }
+
+}
+.container-img:hover{
+    .container-text-proyec{
+        // display: initial;
+        opacity: 2;
+    }
+}
+
+.btn{
+    color: white;
+    border-color: white;
+}
+
+@media (max-width: 1500px) {
+    .container-text-proyec{
+        padding: 18% 5%;
+        h2{
+            font-size: 23px;
+        }
+        span{
+            font-size: 18px;
+        }
+        p{
+            font-size: 15px;
+        }
+    
+    }
+}
+
+@media (max-width: 1200px) {
+    .container-text-proyec{
+        padding: 28% 5%;
+        h2{
+            font-size: 33px;
+        }
+        span{
+            font-size: 18px;
+        }
+        p{
+            font-size: 15px;
+        }
+    
+    }
+}
+@media (max-width: 980px) {
+    .container-text-proyec{
+        padding: 20% 5%;
+        h2{
+            font-size: 39px;
+        }
+        span{
+            font-size: 16px;
+        }
+        p{
+            font-size: 12px;
+        }
+    
+    }
+}
+
+@media (max-width: 850px) {
+    .container-text-proyec{
+        padding: 23% 5%;
+        h2{
+            font-size: 23px;
+        }
+        span{
+            font-size: 16px;
+        }
+        p{
+            font-size: 12px;
+        }
+    
+    }
+}
+
+@media (max-width: 760px) {
+    .container-text-proyec{
+        padding: 23% 5%;
+        h2{
+            font-size: 55px;
+        }
+        span{
+            font-size: 30px;
+        }
+        p{
+            font-size: 22px;
+        }
+    
+    }
+}
+
+@media (max-width: 760px) {
+    .container-text-proyec{
+        padding: 23% 5%;
+        h2{
+            font-size: 38px;
+        }
+        span{
+            font-size: 25px;
+        }
+        p{
+            font-size: 18px;
+        }
+    
+    }
+}
+
+@media (max-width: 590px) {
+    .container-text-proyec{
+        padding: 23% 5%;
+        h2{
+            font-size: 30px;
+        }
+        span{
+            font-size: 23px;
+        }
+        p{
+            font-size: 16px;
+        }
+    
+    }
+}
+
+@media (max-width: 480px) {
+    .container-text-proyec{
+        padding: 23% 5%;
+        h2{
+            font-size: 25px;
+        }
+        span{
+            font-size: 18px;
+        }
+        p{
+            font-size: 13px;
+        }
+    
+    }
+}
+
+@media (max-width: 380px) {
+    .container-text-proyec{
+        padding: 23% 5%;
+        h2{
+            font-size: 22px;
+        }
+        span{
+            font-size: 17px;
+        }
+        p{
+            font-size: 12px;
+        }
+    
+    }
+}
+
+
+
+
+
+
+// .im{
+    
+//     background-size: 160% 160%;
+//     background-repeat: no-repeat;
+//     background-position: center;
+// }
+
+.container-img{
+    // flex-wrap: no-wrap;
+    // margin: 12px 0;
+    // width:;
+    // height: 12px;
+    // background-color: #3E92CC;
+}
