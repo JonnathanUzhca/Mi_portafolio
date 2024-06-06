@@ -23,8 +23,6 @@ export class FooterComponent  implements OnInit {
      await this.weatherService.getWeather()
     .subscribe((item) => {
       this.weather = item
-      console.log(item)
-
     },
     error =>{
       console.error(error)
