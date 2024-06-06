@@ -22,19 +22,236 @@
 
   </div> -->
   <!-- <div class="row"> -->
-    <div class="container-footer-botton">
-      <h1 style="color: wheat">colas</h1>
-    </div>
-    <div class="container-center-text">
-        <div class="container-center-texto-2">
-            <div class="row">
-                <div class="col-8" style="background-color: red;">col-8</div>
-                <div class="col-4" style="background-color: aqua;">col-4</div>
-              </div>
+  <div class="container-footer-botton">
+    <!-- <h1 style="color: white">{{weather?.location?.name}}</h1> -->
+
+    <div class="weather">
+      <div class="banner">
+        <div class="posponer">
+          <h1>{{ weather?.location?.name }}</h1>
+          <div *ngIf="weather?.current.is_day === 0; else dia">
+            <img
+              src="assets/img/icons/luna-llena.png"
+              alt="luna"
+              width="100px"
+              height="100px"
+            />
+          </div>
+          <ng-template #dia>
+            <img
+              src="assets/img/icons/sol.png"
+              alt="sol"
+              width="140px"
+              height="140px"
+            />
+            <br>
+          </ng-template>
+
+          <img
+            src="https:{{ weather?.current?.condition?.icon }}"
+            alt=""
+            width="40px"
+            height="40px"
+          />
+          <span>{{ weather?.current?.temp_c }} ºC </span><span>-</span
+          ><span> {{ weather?.current.temp_f }} ºF</span>
+          <h3>{{ weather?.current?.condition?.text }}</h3>
+          <br />
+          <div class="progress" style="margin: 0 25%; height: 25px;">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              aria-valuenow="100"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              [style.width.%]="weather?.current?.cloud"
+              style="font-size: 18px;"
+            >
+              Nublado {{ weather?.current?.cloud }} %
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="container-footer-top">
-        <span>© 2024 - PORTAFOLIO | JONNATHAN UZHCA - Desarrollado con mucho amor.</span>
+        <div
+          *ngIf="
+            weather?.current?.cloud <= 100 && weather?.current?.cloud >= 70
+          "
+        >
+          <div class="clouds">
+            <img src="assets/img/weather/cloud1.png" alt="" style="--i: 1" />
+            <img src="assets/img/weather/cloud2.png" alt="" style="--i: 2" />
+            <img src="assets/img/weather/cloud3.png" alt="" style="--i: 3" />
+            <img src="assets/img/weather/cloud4.png" alt="" style="--i: 4" />
+            <img src="assets/img/weather/cloud5.png" alt="" style="--i: 5" />
+            <img src="assets/img/weather/cloud1.png" alt="" style="--i: 6" />
+            <img src="assets/img/weather/cloud2.png" alt="" style="--i: 7" />
+            <img src="assets/img/weather/cloud3.png" alt="" style="--i: 8" />
+            <img src="assets/img/weather/cloud4.png" alt="" style="--i: 9" />
+            <img src="assets/img/weather/cloud5.png" alt="" style="--i: 10" />
+            <img src="assets/img/weather/cloud1.png" alt="" style="--i: 11" />
+            <img src="assets/img/weather/cloud2.png" alt="" style="--i: 12" />
+            <img src="assets/img/weather/cloud3.png" alt="" style="--i: 13" />
+            <img src="assets/img/weather/cloud4.png" alt="" style="--i: 14" />
+            <img src="assets/img/weather/cloud5.png" alt="" style="--i: 15" />
+          </div>
+        </div>
+        <div
+          *ngIf="weather?.current?.cloud <= 70 && weather?.current?.cloud >= 50"
+        >
+          <div class="clouds">
+            <img src="assets/img/weather/cloud2.png" alt="" style="--i: 2" />
+            <img src="assets/img/weather/cloud4.png" alt="" style="--i: 4" />
+            <img src="assets/img/weather/cloud2.png" alt="" style="--i: 7" />
+            <img src="assets/img/weather/cloud1.png" alt="" style="--i: 11" />
+            <img src="assets/img/weather/cloud2.png" alt="" style="--i: 12" />
+            <img src="assets/img/weather/cloud4.png" alt="" style="--i: 14" />
+            <img src="assets/img/weather/cloud5.png" alt="" style="--i: 15" />
+          </div>
+        </div>
+        <div
+          *ngIf="weather?.current?.cloud <= 50 && weather?.current?.cloud >= 30"
+        >
+          <div class="clouds">
+            <img src="assets/img/weather/cloud1.png" alt="" style="--i: 1" />
+            <img src="assets/img/weather/cloud2.png" alt="" style="--i: 2" />
+            <img src="assets/img/weather/cloud4.png" alt="" style="--i: 4" />
+            <img src="assets/img/weather/cloud2.png" alt="" style="--i: 7" />
+          </div>
+        </div>
+        <div
+          *ngIf="weather?.current?.cloud <= 30 && weather?.current?.cloud >= 10"
+        >
+          <div class="clouds">
+            <img src="assets/img/weather/cloud4.png" alt="" style="--i: 4" />
+            <img src="assets/img/weather/cloud2.png" alt="" style="--i: 7" />
+          </div>
+        </div>
+        <div
+          *ngIf="weather?.current?.cloud <= 10 && weather?.current?.cloud >= 0"
+        >
+          <div class="clouds">
+            <!-- <img src="assets/img/weather/cloud1.png" alt="" style="--i:9"> -->
+            <img src="assets/img/weather/cloud1.png" alt="" style="--i: 16" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <div class="container-center-text">
+    <div class="container-center-texto-2">
+      <div class="row">
+        <div class="col-12">
+          <div class="container-center-text-footer">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="container-logo-text">
+                  <h2>MI PORTAFOLIO</h2>
+                  <p>
+                    He creado mi portafolio con Angular, aprovechando la
+                    flexibilidad de Bootstrap y Angular Material para el diseño.
+                    Le he añadido algunos estilos personalizados que reflejan mi
+                    personalidad y habilidades. Este enfoque me permitió
+                    construir una interfaz limpia y moderna, destacando mis
+                    proyectos y experiencias de manera clara y atractiva.
+                  </p>
+                  <ul class="social-icons">
+                    <li>
+                      <a
+                        href="https://www.facebook.com/tatan.uzhca/?viewas=100000686899395&locale=es_LA"
+                        class="social-link"
+                        target="_blank"
+                        ><i class="bi bi-facebook" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://myaccount.google.com/profile/profiles-summary?hl=es_419&utm_source=OGB&utm_medium=act"
+                        class="social-link"
+                        target="_blank"
+                        ><i class="bi bi-google" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/jonnathan0106/"
+                        class="social-link"
+                        target="_blank"
+                        ><i class="bi bi-instagram" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/JonnathanUzhca"
+                        class="social-link"
+                        target="_blank"
+                        ><i class="bi bi-github" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.tiktok.com/@jonnathanuzhca?_t=8mc22cFs8OL&_r=1"
+                        class="social-link"
+                        target="_blank"
+                        ><i class="bi bi-tiktok" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="container-donde">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <div class="container">
+                        <h2>¿DÓNDE?</h2>
+                        <span>Ecuador Cuenca Azuay</span>
+                        <h2>Contacto</h2>
+                        <span>(+593) 62 - 674 -872</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="container">
+                        <ul class="icons-function">
+                          <li>
+                            <img
+                              src="assets/img/icons/angular-icon-logo.png"
+                              alt="Desarrollado en angular"
+                              width="64px"
+                              height="64px"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              src="assets/img/icons/bootrap.png"
+                              alt="Herramienta bootstrap"
+                              width="64px"
+                              height="64px"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              src="/assets/img/icons/angularMaterial.png"
+                              alt="Herramienta Angular material"
+                              width="64px"
+                              height="64px"
+                            />
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-footer-top">
+    <span
+      >© 2024 - PORTAFOLIO | JONNATHAN UZHCA - Desarrollado con mucho
+      amor.</span
+    >
+  </div>
+</div>
 <!-- </div> -->
