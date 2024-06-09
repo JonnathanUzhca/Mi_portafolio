@@ -4,6 +4,7 @@ import { FocoLuzComponent } from './foco-luz/foco-luz.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
 import { ProyectComponent } from './proyect/proyect.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -11,7 +12,8 @@ import { ProyectComponent } from './proyect/proyect.component';
   declarations: [
     FocoLuzComponent,
     AboutComponent,
-    ProyectComponent
+    ProyectComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { ProyectComponent } from './proyect/proyect.component';
   exports: [
     FocoLuzComponent,
     AboutComponent,
-    ProyectComponent
+    ProyectComponent,
+    ContactComponent
   ]
 })
 export class ComponentsModule { }
