@@ -4,7 +4,8 @@
 }
 .container-proyect-all{
     // background: rgba(0,);
-    margin: 100px;
+    // background-color: red;
+    margin: 5%;
     // padding:  ;
 }
 h3{
@@ -59,13 +60,12 @@ h3{
     justify-content: center;
     align-items: center;
     // background-image: url('/assets/img/proyecto/proyecto.png');
-    
 }
 
 img{
     background-position: center;   
     width: 100%;
-    height: 470px;
+    // height: 470px;
     background-size: cover; /* Cubre todo el contenedor */
     background-position: center; /* Centra la imagen */
     // transition: background-size 700ms ease; /* Transición suave para la transformación */
@@ -88,7 +88,6 @@ img{
     h2{
         font-size: 42px;
     }
-
 }
 .container-img:hover{
     .container-text-proyec{
@@ -151,7 +150,8 @@ img{
 
 @media (max-width: 850px) {
     .container-text-proyec{
-        padding: 23% 5%;
+        // background-color: red;
+        padding: 20% 0;
         h2{
             font-size: 23px;
         }
@@ -246,5 +246,5 @@ img{
 }
 
 .container-img{
-    margin: 8px;
+    margin: 8px ;
 }

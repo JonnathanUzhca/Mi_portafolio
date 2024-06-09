@@ -5,7 +5,8 @@
 
 .container-about-all:hover{
     .title-section{
-        background-size: 15% 6px;
+        background-size: 21% 6px;
+        color: black;
     }
 
 }
@@ -61,11 +62,11 @@ a:hover{
     // font-family: fantasy;
     // text-align: center;
 }
-h3{
-    font-size: 40px;
-    // font-family: ;
 
+h3{
+    font-size: 50px;
 }
+
 @media (max-width: 868px) {
     
 }
@@ -74,3 +75,28 @@ h3{
     // background-color: red;
     width: 100%;
 }
+
+
+
+
+// .tituloAbout{
+//     // position: relative;
+//     // text-align: center;
+//     // background-color: red;
+//     h1{
+//         font-size: 100px;
+//         color: black;
+//   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+//   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+//     }
+// }
+
+// .tituloEncima{
+//     // background-color: red;
+//     // height: 150px;
+//     left: 160px;
+//     position: relative;
+//     top: -90px;
+//     color: #3E92CC;
+//     // width: 150px;
+// }
