@@ -1,0 +1,32 @@
+.container-competences-all{
+    margin: 124px 212px ;
+}
+.container-competences-all:hover{
+    .title-section{
+        background-size: 35% 6px;
+        // color: black;
+    }
+}
+
+.container-competences-all .text{
+    color: white;
+}
+
+.container-progress .progress{
+    margin: 12px;
+}
+h6{
+    color: white;
+}
+
+.title-section{
+    
+    background-image: linear-gradient(90deg, #3E92CC, #3E92CC, #3E92CC);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 0% 5px;
+    background-position: left bottom;
+    transition: background-size 700ms  ease-in-out;
+}

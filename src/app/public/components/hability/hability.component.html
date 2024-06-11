@@ -1,1 +1,230 @@
-<h1>hola mundo</h1>
+<div class="container-hability-all">
+  <div class="container-hablility">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="hability">
+          <div class="icons">
+            <div class="imgIcons">
+                <img src="" alt="" />
+            </div>
+            <div class="imgIcons" style="--i:1;" data-id="content_1" (click)="onActive(1)" >
+                <img src="assets/img/icons/dj.png" alt="" width="25px" height="125px"/>
+            </div>
+            <div class="imgIcons" style="--i:2;"  data-id="content_2" (click)="onActive(2)">
+                <img src="assets/img/icons/flutter.png" alt="" width="25px" height="125px"/>
+            </div>
+            <div class="imgIcons" style="--i:3;"  data-id="content_3" (click)="onActive(3)">
+                <img src="assets/img/icons/html.png" alt="" width="25px" height="125px"/>
+            </div>
+            <div class="imgIcons" style="--i:4;"  data-id="content_4" (click)="onActive(4)">
+                <img src="assets/img/icons/java.png" alt="" width="25px" height="125px"/>
+            </div>
+            <div class="imgIcons" style="--i:5;" data-id="content_5" (click)="onActive(5)">
+                <img src="assets/img/icons/js.png" alt=""  width="25px" height="125px"/>
+            </div>
+            <div class="imgIcons" style="--i:6;" data-id="content_6" (click)="onActive(6)">
+                <img src="assets/img/icons/mysql.png" alt=""  width="25px" height="125px"/>
+            </div>
+            <div class="imgIcons" style="--i:7;"  data-id="content_7" (click)="onActive(7)">
+                <img src="assets/img/icons/oracle.png" alt="" width="25px" height="125px"/>
+            </div>
+            <div class="imgIcons" style="--i:8;"  data-id="content_8" (click)="onActive(8)">
+                <img src="assets/img/icons/php.png" alt="" width="25px" height="125px"/>
+            </div>
+            <div class="imgIcons" style="--i:9;"  data-id="content_9" (click)="onActive(9)">
+                <img src="assets/img/icons/postgre.png" alt=""  width="25px" height="125px"/>
+            </div>
+            <div class="imgIcons" style="--i:10;"  data-id="content_10" (click)="onActive(10)">
+                <img src="assets/img/icons/react.png" alt="" width="25px" height="125px"/>
+            </div>
+            <div class="imgIcons" style="--i:11;"  data-id="content_11" (click)="onActive(11)">
+                <img src="assets/img/icons/typescript.png" alt="" width="25px" height="125px"/>
+            </div>
+            <div class="imgIcons" style="--i:12;"  data-id="content_12" (click)="onActive(12)">
+                <img src="assets/img/icons/angularCircu.png" alt="" width="25px" height="125px"/>
+            </div>
+          </div>
+          
+          <div class="conte">
+            <div class="content">
+            </div>
+                <div class="contentIcons" *ngIf="Valor == 1" >
+                    <div class="container-card">
+                        <div class="imgIconsText">
+                            <img src="assets/img/icons/dj.png" alt=""  />
+                        </div>
+                        <div class="textIcons">
+                            <h2>Django<br></h2>
+                            <div class="progress" style="height: 23px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%; font-size: 21px;">75%</div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="contentIcons" *ngIf="Valor == 2">
+                    <div class="container-card">
+                        <div class="imgIconsText">
+                            <img src="assets/img/icons/flutter.png" alt=""/>
+                        </div>
+                        <div class="textIcons">
+                            <h2>Flutter<br></h2>
+                            <div class="progress" style="height: 23px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 15%; font-size: 21px;">15%</div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+             
+                <div class="contentIcons" *ngIf="Valor == 3">
+                    <div class="container-card">
+                        <div class="imgIconsText">
+                            <img src="assets/img/icons/html.png" alt="" />
+                        </div>
+                        <div class="textIcons">
+                            <h2>Html<br></h2>
+                            <div class="progress" style="height: 23px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%; font-size: 21px;">95%</div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="contentIcons" *ngIf="Valor == 4">
+                    <div class="container-card">
+                        <div class="imgIconsText">
+                            <img src="assets/img/icons/java.png" alt="" />
+                        </div>
+                        <div class="textIcons">
+                            <h2>Java<br></h2>
+                            <div class="progress" style="height: 23px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%; font-size: 21px;">85%</div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="contentIcons" *ngIf="Valor == 5">
+                    <div class="container-card">
+                        <div class="imgIconsText">
+                            <img src="assets/img/icons/js.png" alt=""  />
+                        </div>
+                        <div class="textIcons">
+                            <h2>JavaScript <br></h2>
+                            <div class="progress" style="height: 23px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%; font-size: 21px;">85%</div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="contentIcons" *ngIf="Valor == 6">
+                    <div class="container-card">
+                        <div class="imgIconsText">
+                            <img src="assets/img/icons/mysql.png" alt=""  />
+                        </div>
+                        <div class="textIcons">
+                            <h2>MySQL<br></h2>
+                            <div class="progress" style="height: 23px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%; font-size: 21px;">75%</div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+             
+                <div class="contentIcons" *ngIf="Valor == 7">
+                    <div class="container-card">
+                        <div class="imgIconsText">
+                            <img src="assets/img/icons/oracle.png" alt="" />
+                        </div>
+                        <div class="textIcons">
+                            <h2>Oracle<br></h2>
+                            <div class="progress" style="height: 23px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 77%; font-size: 21px;">77%</div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+             
+                <div class="contentIcons" *ngIf="Valor == 8">
+                    <div class="container-card">
+                        <div class="imgIconsText">
+                            <img src="assets/img/icons/php.png" alt="" />
+                        </div>
+                        <div class="textIcons">
+                            <h2>Php<br></h2>
+                            <div class="progress" style="height: 23px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%; font-size: 21px;">75%</div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="contentIcons" *ngIf="Valor == 9">
+                    <div class="container-card">
+                        <div class="imgIconsText">
+                            <img src="assets/img/icons/postgre.png" alt="" />
+                        </div>
+                        <div class="textIcons">
+                            <h2>PostgresSQL<br></h2>
+                            <div class="progress" style="height: 23px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 82%; font-size: 21px;">82%</div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="contentIcons" *ngIf="Valor == 10">
+                    <div class="container-card">
+                        <div class="imgIconsText">
+                            <img src="assets/img/icons/react.png" alt="" />
+                        </div>
+                        <div class="textIcons">
+                            <h2>React<br></h2>
+                            <div class="progress" style="height: 23px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 17%; font-size: 21px;">17%</div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+             
+                <div class="contentIcons" *ngIf="Valor == 11">
+                    <div class="container-card">
+                        <div class="imgIconsText">
+                            <img src="assets/img/icons/typescript.png" alt="" />
+                        </div>
+                        <div class="textIcons">
+                            <h2>TypeScript<br></h2>
+                            <div class="progress" style="height: 23px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%; font-size: 21px;">80%</div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+             
+              <div class="contentIcons" *ngIf="Valor == 12">
+                <div class="container-card">
+                    <div class="imgIconsText">
+                        <img src="assets/img/icons/angularCircu.png" alt="" />
+                    </div>
+                    <div class="textIcons">
+                        <h2>Angular<br></h2>
+                        <div class="progress" style="height: 23px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%; font-size: 21px;">90%</div>
+                        </div>
+                    
+                </div> 
+                    
+                    
+                </div>
+                
+              </div>
+          <!-- </div> -->
+          
+        </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

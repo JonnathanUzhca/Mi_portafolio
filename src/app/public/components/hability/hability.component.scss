@@ -1,13 +1,152 @@
-#particle-container {
+// .container-hability-all{
+//     background: rgba(0,0,0,0.9);
+//     height: 80vh;
+
+// }
+
+.container-hablility{
+    // margin: 0 1%;
+    padding: 80px 13%;
+    // background: blue;
+    // height: 1px;
+}
+
+.hability{
     position: relative;
+    width: 500px;
+    height: 500px;
+    // border: 1px solid rgba(255, 255, 255, 0.062);
+    border-radius: 50%;
+}
+
+.hability .icons{
+    position: relative;
+    left: -50%;
     width: 100%;
     height: 100%;
-  }
-  
-  #particle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hability .icons .imgIcons{
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    // overflow: hidden;
+    transition: 0.5s;
+    // border: 1px solid white;
+    // box-shadow: 0 0 0 4px black,
+    //  0 0 0 6px white;
+    transform: rotate(calc(360deg/12 * var(--i)));
+    transform-origin: 285px;
+    z-index: 100;
+    overflow: hidden;
+    animation: animte_01 95s linear infinite;
+}
+
+.hability .icons .imgIcons:hover{
+    box-shadow: 0 0 0 6px black,
+    0 0 0 12px #2b8dd3 ;
+}
+
+.hability .icons .imgIcons img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
-  }
+    transform: rotate(calc(-360deg/12 * var(--i)));
+    animation: animte_02 95s linear infinite;
+    transition: 0.5s;
+    
+}
+
+
+.content{
+    // position: absolute;
+    inset: 0;
+    overflow: hidden;
+    // height: 600px;
+    background: red;
+}
+.conte{
+    // position: relative;
+  top: 0;
+  left: 0;
+z-index: 1;
+margin-top: -500px; 
+}
+
+.content::before{
+    content: '';
+    position: absolute;
+    inset: 60px;
+    border: 4px solid transparent;
+    border-left:  4px solid #2196f3;
+    border-right:  4px solid white;
+    border-radius: 50%;
+    animation: animte_01 5s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@keyframes animte_01{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+
+.content::after{
+    content: '';
+    position: absolute;
+    inset: 100px;
+    border: 4px solid transparent;
+    border-left:  4px solid  white;
+    border-right:  4px solid #2196f3;
+    border-radius: 50%;
+    animation: animte_02 2.5s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@keyframes animte_02{
+    0%{
+        rotate: 360deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+.contentIcons{
+    // background-color: rgb(153, 131, 51);
+    // height: 744vh;
+    margin: 0;
+    padding: 0;
+    // height: 922px;
+}
+
+
+.contentIcons .container-card{
+    padding: 130px; 
+    // height: 1822px;
+    // background: red;
+}
+
+.contentIcons .container-card .imgIconsText img {
+    width: 245px;
+}
+
+.contentIcons  .container-card .textIcons{
+    color: white;
+    padding-top: 185px;
+    text-align: center;
+}
