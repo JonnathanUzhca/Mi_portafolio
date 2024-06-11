@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { ProyectComponent } from './proyect/proyect.component';
 import { ContactComponent } from './contact/contact.component';
 import { HabilityComponent } from './hability/hability.component';
+import { CompetencesComponent } from './competences/competences.component';
 
 
 
@@ -15,7 +16,8 @@ import { HabilityComponent } from './hability/hability.component';
     AboutComponent,
     ProyectComponent,
     ContactComponent,
-    HabilityComponent
+    HabilityComponent,
+    CompetencesComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +28,8 @@ import { HabilityComponent } from './hability/hability.component';
     AboutComponent,
     ProyectComponent,
     ContactComponent,
-    HabilityComponent
+    HabilityComponent,
+    CompetencesComponent
   ]
 })
 export class ComponentsModule { }
