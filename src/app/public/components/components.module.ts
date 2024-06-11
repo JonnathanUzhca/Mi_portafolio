@@ -7,6 +7,7 @@ import { ProyectComponent } from './proyect/proyect.component';
 import { ContactComponent } from './contact/contact.component';
 import { HabilityComponent } from './hability/hability.component';
 import { CompetencesComponent } from './competences/competences.component';
+import { ReferencesComponent } from './references/references.component';
 
 
 
@@ -17,7 +18,8 @@ import { CompetencesComponent } from './competences/competences.component';
     ProyectComponent,
     ContactComponent,
     HabilityComponent,
-    CompetencesComponent
+    CompetencesComponent,
+    ReferencesComponent
   ],
   imports: [
     CommonModule,

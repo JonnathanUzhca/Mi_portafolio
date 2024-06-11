@@ -14,25 +14,11 @@ export class CompetencesComponent implements OnInit{
   public cont6:number = 0;
   public cont7:number = 0;
   public cont8:number = 0;
-  private scrollTop = 0;
-
-  constructor(private renderer: Renderer2,){
+  constructor(){
 
   }
-
-  @HostListener('window:scroll', ['$event'])
-
   ngOnInit(): void {
-    this.onWindowScroll();
-    // this.setContador();
-  }
-
-  onWindowScroll() {
-    this.scrollTop = window.scrollY || document.documentElement.scrollTop;
-    console.log(this.scrollTop)
-    if(this.scrollTop > 1600 && this.scrollTop < 1613){
-      this.setContador();
-    }
+   this.setContador();
   }
 
   setContador(){
@@ -68,7 +54,7 @@ export class CompetencesComponent implements OnInit{
 
     let timer5 = setInterval(() => {
       this.cont5 = cant5+=1;
-      if(cant5 === 85){
+      if(cant5 === 93){
         clearInterval(timer5)
       }
     }, 130);
