@@ -31,7 +31,8 @@ import { ReferencesComponent } from './references/references.component';
     ProyectComponent,
     ContactComponent,
     HabilityComponent,
-    CompetencesComponent
+    CompetencesComponent,
+    ReferencesComponent
   ]
 })
 export class ComponentsModule { }
