@@ -32,6 +32,8 @@ export class HomeComponent  implements OnInit {
   @ViewChild('item1',{static:true}) myItem1! : ElementRef;
   @ViewChild('item2',{static:true}) myItem2! : ElementRef;
   @ViewChild('item3',{static:true}) myItem3! : ElementRef;
+  @ViewChild('item4',{static:true}) myItem4! : ElementRef;
+  @ViewChild('item5',{static:true}) myItem5! : ElementRef;
   @ViewChild('itemName',{static:true}) itemName! : ElementRef;
   @ViewChild('itemSubName',{static:true}) itemSubName! : ElementRef;
   @ViewChild('itemImg', {static:true}) itemImg! : ElementRef;
@@ -77,6 +79,8 @@ export class HomeComponent  implements OnInit {
     const elemtItem1 = this.myItem1.nativeElement;
     const elemtItem2 = this.myItem2.nativeElement;
     const elemtItem3 = this.myItem3.nativeElement;
+    const elemtItem4 = this.myItem4.nativeElement;
+    const elemtItem5 = this.myItem5.nativeElement;
     const elementItemName = this.itemName.nativeElement;
     const elemtItemSubName = this.itemSubName.nativeElement;
     const elementItemImg = this.itemImg.nativeElement;
@@ -89,17 +93,19 @@ export class HomeComponent  implements OnInit {
     // }else
 
     if(this.scrollTop > 725){
-      this.renderer.setStyle(element, 'backgroundColor', '#16324F')
-      this.renderer.setStyle(element, 'position','fixed')
-      this.renderer.setStyle(element, 'z-index', '1000' )
-      this.renderer.setStyle(elemtItem, 'color', 'white')
-      this.renderer.setStyle(elemtItem1, 'color', 'white')
-      this.renderer.setStyle(elemtItem2, 'color', 'white')
-      this.renderer.setStyle(elemtItem3, 'color', 'white')
-      this.renderer.setStyle(elementItemName, 'color', 'white',)
-      this.renderer.setStyle(elemtItemSubName, 'color', 'white')
-      this.renderer.setStyle(elementItemName, 'font-size', '22px')
-      this.renderer.setStyle(elemtItemSubName, 'color', 'white')
+      this.renderer.setStyle(element, 'backgroundColor', '#16324F');
+      this.renderer.setStyle(element, 'position','fixed');
+      this.renderer.setStyle(element, 'z-index', '1000' );
+      this.renderer.setStyle(elemtItem, 'color', 'white');
+      this.renderer.setStyle(elemtItem1, 'color', 'white');
+      this.renderer.setStyle(elemtItem2, 'color', 'white');
+      this.renderer.setStyle(elemtItem3, 'color', 'white');
+      this.renderer.setStyle(elemtItem4, 'color', 'white');
+      this.renderer.setStyle(elemtItem5, 'color', 'white');
+      this.renderer.setStyle(elementItemName, 'color', 'white',);
+      this.renderer.setStyle(elemtItemSubName, 'color', 'white');
+      this.renderer.setStyle(elementItemName, 'font-size', '22px');
+      this.renderer.setStyle(elemtItemSubName, 'color', 'white');
       
       this.state = 'state2';
       // this.renderer.setStyle(elementItemImg, 'display', 'initial')
@@ -110,6 +116,8 @@ export class HomeComponent  implements OnInit {
           this.renderer.setStyle(elemtItem1, 'color', 'black')
           this.renderer.setStyle(elemtItem2, 'color', 'black')
           this.renderer.setStyle(elemtItem3, 'color', 'black')
+          this.renderer.setStyle(elemtItem4, 'color', 'black');
+          this.renderer.setStyle(elemtItem5, 'color', 'black');
           this.renderer.setStyle(elementItemImg, 'display', 'initial')
           this.state = 'state1';
         }
