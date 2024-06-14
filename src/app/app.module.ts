@@ -11,7 +11,9 @@ import { RouterModule } from '@angular/router';
 import { PublicModule } from './public/public.module';
 import { IsLoadingModule } from '@service-work/is-loading';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
-
+// import { SliderComponent } from './slider/slider.component';
+// import { SwiperModule } from 'swiper/types';
+import { SwiperModule } from "swiper/angular";
 
 @NgModule({
   declarations: [
@@ -27,8 +29,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     SharedModule,
     IsLoadingModule,
     MatProgressBarModule,
-    HttpClientModule
-    
+    HttpClientModule,
+    SwiperModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
