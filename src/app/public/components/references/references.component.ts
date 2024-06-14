@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import M from 'materialize-css';
+import { Component, OnInit, Renderer2} from '@angular/core';
+
 
 @Component({
   selector: 'app-references',
@@ -7,27 +7,35 @@ import M from 'materialize-css';
   styleUrls: ['./references.component.scss']
 })
 export class ReferencesComponent implements OnInit{
+ 
+  private currentCarrusel  : number = 0;
 
-  constructor(){
+  constructor(private renderer: Renderer2){
 
   }
 
   ngOnInit(): void {
-    
+    if(true){
+      this.onAnimateReferen();
+
+    }
+      
   }
-
-  ngAfterViewInit(): void {
-    const elemetosCarousel = document.querySelectorAll('.carousel');
-    M.Carousel.init(elemetosCarousel, {
-        duration: 25,
-        dist:-130,
-        shift:5,
-        padding: 5,
-        numVisible :5,
-        indicators: true,
-        noWrap: false
-
+  
+  
+  onAnimateReferen(){
+    const divs = document.querySelectorAll('.carrusel-item');
+    divs.forEach((div , index) => {
+      setTimeout(() => {
+          div.classList.add('visible');
+      }, index * 6000);
     })
-    
   }
+
+
+
+
+
+
+  
 }

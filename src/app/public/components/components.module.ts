@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HabilityComponent } from './hability/hability.component';
 import { CompetencesComponent } from './competences/competences.component';
 import { ReferencesComponent } from './references/references.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
@@ -23,7 +24,8 @@ import { ReferencesComponent } from './references/references.component';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
   exports: [
     FocoLuzComponent,
