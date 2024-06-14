@@ -356,6 +356,9 @@
     <li class="item">
       <a href="#About" class="nav-link" #item1>Sobre mi</a>
     </li>
+    <li class="item">
+      <a href="#hability" class="nav-link" #item2>Mis Habilidades</a>
+    </li>
     <img
       #itemImg
       [@stateChange]="state"
@@ -370,10 +373,13 @@
     </li>
 
     <li class="item">
-      <a href="#Proyectos" class="nav-link" #item2>Proyectos</a>
+      <a href="#Reference" class="nav-link" #item3>Referencias</a>
     </li>
     <li class="item">
-      <a href="#Contactos" class="nav-link" #item3>Contacto</a>
+      <a href="#Proyectos" class="nav-link" #item4>Proyectos</a>
+    </li>
+    <li class="item">
+      <a href="#Contacto" class="nav-link" #item5>Contacto</a>
     </li>
   </ul>
 </header>
@@ -391,7 +397,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="hability">
     <div class="container-hability">
      <div class="row">
       <div class="col-lg-6">
@@ -404,7 +410,10 @@
       
     </div>
   </section>
-  <section>
+  <br>
+  <br>
+  <br>
+  <section id="Reference">
     <div class="container-references">
       <app-references></app-references>
     </div>
@@ -416,11 +425,11 @@
     </div>
   </section>
 
-  <section id="Contactos">
+  <!-- <section id="Contactos">
     <div class="container-contact">
      <app-contact></app-contact>
     </div>
-  </section>
+  </section> -->
 
   <footer>
     <app-footer></app-footer>

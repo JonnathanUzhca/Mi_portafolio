@@ -11,7 +11,9 @@ import { RouterModule } from '@angular/router';
 import { PublicModule } from './public/public.module';
 import { IsLoadingModule } from '@service-work/is-loading';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
-// import { SliderComponent } from './slider/slider.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAnalyticsModule } from '@angular/fire/compat/analytics';
+import { environment } from 'src/environments/environment.prod';
 // import { SwiperModule } from 'swiper/types';
 import { SwiperModule } from "swiper/angular";
 
@@ -30,7 +32,9 @@ import { SwiperModule } from "swiper/angular";
     IsLoadingModule,
     MatProgressBarModule,
     HttpClientModule,
-    SwiperModule
+    SwiperModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAnalyticsModule
   
   ],
   providers: [],
