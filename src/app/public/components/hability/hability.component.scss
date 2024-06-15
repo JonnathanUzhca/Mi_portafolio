@@ -1,9 +1,3 @@
-// .container-hability-all{
-//     background: rgba(0,0,0,0.9);
-//     height: 80vh;
-
-// }
-
 .container-hablility{
     // margin: 0 1%;
     // background: gold;
@@ -131,6 +125,8 @@
 .contentIcons{
     // background-color: rgb(153, 131, 51);
     // height: 744vh;
+    // width: 80%;
+    // background: green
     margin: 0;
     padding: 0;
     // height: 922px;
@@ -139,6 +135,7 @@
 
 .contentIcons .container-card{
     padding: 130px; 
+    // background: red;
     // // height: 1822px;
     // // background: red;
 }
@@ -225,22 +222,27 @@
 @media (max-width: 540px) {
     .container-hablility{
         padding: 50px 21%;
+        overflow-x: hidden;
+        overflow-y: hidden;
         // width: 12px;
     }
-
+    
     .hability .icons .imgIcons{
         transform-origin: 200px;
+        // overflow-x: hidden;
     }
-
+    
     .content::before{
         display: none;
+        // overflow-x: hidden;
+        // overflow-x: hidden;
     }
     
     .contentIcons .container-card{
         padding: 220px 90px; 
         // // height: 1822px;
-        // background: red;
-        // width: 12px;
+        // background: blue;
+        width: 80%;
     }
     
     .content::after{
@@ -254,6 +256,8 @@
 @media (max-width: 450px) {
     .container-hablility{
         padding: 10px 14%;
+        overflow-x: hidden;
+        overflow-y: hidden;
         // width: 12px;
     }
 
@@ -282,4 +286,18 @@
         text-align: center;
     }
 }
+
+@media (max-width: 376px) {
+    .container-hablility{
+        padding: 10px 11%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        // width: 12px;
+    }
+    .hability .icons .imgIcons{
+        transform-origin: 188px;
+    }
+    
+}
+
 

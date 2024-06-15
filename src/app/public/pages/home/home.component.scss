@@ -446,6 +446,12 @@ margin: 20% 5%;
   }
 }
 
+  @media (max-width: 376px) {
+    .container-hability{
+      height: 245vh;
+    }
+  }
+
 // .container-references{
 //   margin: 120px 0px; 
 // }
