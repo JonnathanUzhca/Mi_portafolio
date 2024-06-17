@@ -400,19 +400,77 @@ margin: 20% 5%;
 
 .container-hability{
   background: rgba(0,0,0,0.9);
-    // height: 92vh;
+  // overflow-x: hidden;
 
 }
 
-// .container-references{
-//   margin: 120px 0px; 
+@media  (min-width: 741px) and   (max-width: 991px) {
+  .container-hability{
+    height: 160vh;
+  }
+}
+@media  (min-width: 550px) and   (max-width: 741px) {
+  .container-hability{
+    height: 180vh;
+  }
+}
+@media  (min-width: 400px) and   (max-width: 550px) {
+  .container-hability{
+    height: 195vh;
+  }
+}
+@media  (min-width: 250px) and   (max-width: 400px) {
+  .container-hability{
+    height: 210vh;
+  }
+}
+// @media (max-width: 855px) {
+//   .container-hability{
+//     height: 122vh;
+//   }
 // }
 
-// .container-contact{
-//   background-color: #29e78e;
-//   margin: 0;
-//   padding: 0;
+// @media (max-width: 770px) {
+//   .container-hability{
+//     height: 162vh;
+//   }
 // }
+
+// @media (max-width: 541px) {
+//   .container-hability{
+//     height: 215vh;
+//   }
+// }
+
+// @media (max-width: 480px) {
+//   .container-hability{
+//     height: 180vh;
+//   }
+// }
+
+// @media (max-width: 390px) {
+//   .container-hability{
+//     height: 200vh;
+//   }
+// }
+
+// @media (max-width: 360px) {
+//   .container-hability{
+//     height: 205vh;
+//   }
+// }
+
+  // @media (max-width: 376px) {
+  //   .container-hability{
+  //     height: 245vh;
+  //   }
+  // }
+
+.container-references{
+
+  margin-bottom: 95px;
+}
+
 
 @media (max-width: 1440px) {
   .container-About{
