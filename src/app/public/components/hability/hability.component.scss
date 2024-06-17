@@ -2,7 +2,7 @@
     // margin: 0 1%;
     // background: gold;
     position: relative;
-    padding: 80px 250px;
+    padding: 130px 70px;
     // background: blue;
     // height: 1px;
 }
@@ -64,9 +64,9 @@
 
 
 .content{
-    // position: absolute;
+    position: absolute;
     inset: 0;
-    overflow: hidden;
+    // overflow: hidden;
     // height: 600px;
     // background: red;
 }
@@ -75,6 +75,8 @@
     // top: 0;
     // left: 0;
     // z-index: 1;
+    // background: blue;
+    width: 100%;
     margin-top: -500px; 
 }
 
@@ -129,6 +131,7 @@
     // background: green
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     // height: 922px;
 }
 
@@ -221,14 +224,14 @@
 
 @media (max-width: 540px) {
     .container-hablility{
-        padding: 50px 21%;
-        overflow-x: hidden;
-        overflow-y: hidden;
+        padding: 10px 21%;
+        // overflow-x: hidden;
+        // overflow-y: hidden;
         // width: 12px;
     }
     
     .hability .icons .imgIcons{
-        transform-origin: 200px;
+        transform-origin: 190px;
         // overflow-x: hidden;
     }
     
@@ -237,9 +240,17 @@
         // overflow-x: hidden;
         // overflow-x: hidden;
     }
+    .contentIcons{
+        // display: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+    //    background: green; 
+    }
     
     .contentIcons .container-card{
-        padding: 220px 90px; 
+        padding: 220px 79px; 
         // // height: 1822px;
         // background: blue;
         width: 80%;
@@ -249,13 +260,13 @@
         position: absolute;
         width: 200px;
         height: 200px;
-        left: 66px; 
+        left: 53px; 
     }
 }
 
 @media (max-width: 450px) {
     .container-hablility{
-        padding: 10px 14%;
+        padding: 5px 14%;
         overflow-x: hidden;
         overflow-y: hidden;
         // width: 12px;
