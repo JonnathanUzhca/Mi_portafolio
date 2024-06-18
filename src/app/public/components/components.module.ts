@@ -9,6 +9,7 @@ import { HabilityComponent } from './hability/hability.component';
 import { CompetencesComponent } from './competences/competences.component';
 import { ReferencesComponent } from './references/references.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { ExperiencesComponent } from './experiences/experiences.component';
 
 
 
@@ -20,7 +21,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     ContactComponent,
     HabilityComponent,
     CompetencesComponent,
-    ReferencesComponent
+    ReferencesComponent,
+    ExperiencesComponent
   ],
   imports: [
     CommonModule,
@@ -34,7 +36,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     ContactComponent,
     HabilityComponent,
     CompetencesComponent,
-    ReferencesComponent
+    ReferencesComponent,
+    ExperiencesComponent
   ]
 })
 export class ComponentsModule { }
