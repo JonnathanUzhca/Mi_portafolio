@@ -1,4 +1,8 @@
-.container:hover {
+
+.container-references-all{
+  margin: 3px 5%;
+}
+.container-references-all:hover {
   .title-section {
     background-size: 21% 6px;
     color: black;
@@ -317,10 +321,17 @@ img:hover {
   h3 {
     font-size: 36px;
   }
+
+  .title-section {
+    margin: 5px;
+  }
+  
+  
 }
 
 @media only screen and (max-width: 767px) {
   h3 {
+    margin: 0 152px;
     font-size: 40px;
   }
 
