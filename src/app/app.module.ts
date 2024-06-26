@@ -24,7 +24,6 @@ import { SwiperModule } from "swiper/angular";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PublicModule,
     BrowserAnimationsModule,
     MatButtonModule,
     RouterModule,

@@ -5,6 +5,8 @@ import { Erro500Component } from './erro500/erro500.component';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { SwiperModule } from "swiper/angular";
+import { SpinnerComponent } from './spinner/spinner.component';
+import { splitNsName } from '@angular/compiler';
 
 
 
@@ -12,17 +14,19 @@ import { SwiperModule } from "swiper/angular";
   declarations: [
     Erro404Component,
     Erro500Component,
-    FooterComponent
+    FooterComponent,
+    SpinnerComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
-    SwiperModule
+    SwiperModule,
   ],
   exports:[
     Erro404Component,
     Erro500Component,
-    FooterComponent
+    FooterComponent,
+    SpinnerComponent
   ]
 })
 export class SharedModule { }
