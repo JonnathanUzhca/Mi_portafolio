@@ -244,9 +244,9 @@ i {
     text-align: justify;
   }
   .imgAbout {
-    left: 9%;
-    width: 300px;
-    height: 300px;
+    left: 12%;
+    width: 250px;
+    height: 250px;
   }
 
   .autor {
@@ -261,8 +261,8 @@ i {
 
   .container-info-img img {
     margin: 10px 20px;
-    width: 310px;
-    height: 580px;
+    width: 80%;
+    height: 480px;
     border-radius: 20px;
   }
 
@@ -285,16 +285,64 @@ i {
     margin: 0.1em 0.1em 0.1em 0;
     color: #3e92cc;
   }
+
+
+.skill-title{
+  font-size: 28px;
 }
 
+
+  .container-info-img-text{
+    // background: red;
+    margin: 0 5%;
+  }
+
+  .container-info-img-conpetencias{
+    width: 90%;
+    margin: 0 23px;
+  }
+
+  
+  .container-study-info{
+    // background: blue;
+    // background: red;
+    margin: 40px 5%;
+    // padding: 0 15%;
+  }
+  .container-curso-info{
+    margin: 40px 5%;
+    // background: red;
+    p{
+      text-align: justify;
+    }
+    // padding: 0 15%;
+    // background: blue;
+  }
+
+
+
+
+}
+
+
+@media (min-width: 365px) and (max-width: 500px) {
+  .container-info-img img {
+    margin: 10px 40px;
+    
+    // width: 85%;
+    height: 500px !important;
+    // border-radius: 20px;
+  }
+}
 @media (min-width: 365px) and (max-width: 625px) {
   .container-text-about {
     position: relative;
-    margin: 0 20px;
-    left: 6%;
-    // padding: 5px 70px;
+    margin: 0 8%;
+    padding: 0 30px;
     color: white;
+    // background: red;
   }
+  
 
   .container-text-about h3 {
     font-size: 55px;
@@ -317,6 +365,8 @@ i {
     left: 70%;
     // margin-top: 412px;
   }
+
+
 
   .custom-shape-divider-bottom-1719294244 {
     position: relative;
@@ -353,368 +403,227 @@ i {
     margin: 0.1em 0.1em 0.1em 0;
     color: #3e92cc;
   }
+
+  .container-info-img-text{
+    // background: red;
+    margin: 0 5%;
+  }
+  
+
+  
+  .containe-info-skills {
+    // width: 100%;
+    max-width: 400px;
+    // background: red;
+    // background: #13293d;
+    // padding: 10px;
+  }
+  .container-info-img img {
+    margin: 10px 30px;
+    
+    width: 85%;
+    height: 700px;
+    border-radius: 20px;
+  }
+  .container-info-img-conpetencias{
+    width: 90%;
+    margin: 0 23px;
+  }
+
+
+  .container-study-info{
+    // background: blue;
+    // background: red;
+    margin: 40px 5%;
+    // padding: 0 15%;
+  }
+  .container-curso-info{
+    margin: 40px 5%;
+    // background: red;
+    p{
+      text-align: justify;
+    }
+    // padding: 0 15%;
+    // background: blue;
+  }
 }
 
 @media (min-width: 625px) and (max-width: 855px) {
   .imgAbout {
     left: 15%;
   }
-  //     .container-aboutMe {
-  //         height: 133vh;
-  //     }
 
-  //     .custom-shape-divider-bottom-1719294244 {
-  //         position: relative;
-  //         bottom: 81px;
-  //     }
+  .container-text-about{
+    position: relative;
+    margin: 0 8%;
+    padding: 0 30px;
+    // left: 6%;
+    // background: blue;
+  }
+  .autor {
+    position: relative;
+    left: 80%;
+    // margin-top: 412px;
+  }
+  .container-infor-text{
+    // background-color: red;
+    margin: 100px 10% 0;
+  }
 
-  //     .container-text-about {
-  //         // background: green;
-  //         margin: 0 40px;
-  //         padding: 5px 30px;
-  //     }
+  // 
+  .container-info-text{
+    // background: red;
+    width: 80%;
+    margin: 0 10%;
+    // margin: 0 125px  ;
+  }
+  .containe-info-skills {
+    // width: 100%;
+    max-width: 700px;
+    // padding: 10px;
+  }
+  .container-info-img img {
+    margin: 30px 20px;
+    
+    width: 90%;
+    height: 700px;
+    border-radius: 20px;
+  }
+  .container-info-img-conpetencias{
+    width: 100%;
+  }
+  .container-study-info{
+    // background: red;
+    margin: 40px 10%;
+    // padding: 0 15%;
+  }
+  .container-curso-info{
+    margin: 40px 10%;
+    p{
+      text-align: justify;
+    }
+    // padding: 0 15%;
+    // background: blue;
+  }
+
+  // 
+  
+}
+@media (min-width: 855px) and (max-width: 1000px) {
+ 
+  .container-text-about{
+    position: relative;
+    margin: 0 8%;
+    padding: 0 30px;
+    // left: 6%;
+    // background: blue;
+  }
+  .autor {
+    position: relative;
+    left: 80%;
+    // margin-top: 412px;
+  }
+  .container-infor-text{
+    // background-color: red;
+    margin: 100px 10% 0;
+  }
+
+  // 
+  .container-info-text{
+    // background: red;
+    width: 80%;
+    margin: 0 10%;
+    // margin: 0 125px  ;
+  }
+  .containe-info-skills {
+    // width: 100%;
+    max-width: 700px;
+    // padding: 10px;
+  }
+  .container-info-img img {
+    margin: 30px 20px;
+    
+    width: 90%;
+    height: 700px;
+    border-radius: 20px;
+  }
+  .container-info-img-conpetencias{
+    width: 100%;
+  }
+  .container-study-info{
+    // background: red;
+    margin: 40px 10%;
+    // padding: 0 15%;
+  }
+  .container-curso-info{
+    margin: 40px 10%;
+    p{
+      text-align: justify;
+    }
+    // padding: 0 15%;
+    // background: blue;
+  }
+
+  // 
+
 }
 
-// @media (min-width: 700px) and (max-width: 746px) {
-//     .imgAbout {
-//         left: 10%;
-//         width: 500px;
-//         height: 500px;
-//     }
-
-//     .custom-shape-divider-bottom-1719294244 {
-//         position: relative;
-//         bottom: 75px;
-//     }
-
-//     .container-aboutMe {
-//         height: 128vh;
-//     }
-
-//     .container-text-about {
-//         // background: green;
-//         margin: 0 40px;
-//         padding: 5px 30px;
-//     }
-// }
-
-// @media (min-width: 630px) and (max-width: 700px) {
-//     .imgAbout {
-//         left: 10%;
-//         width: 500px;
-//         height: 500px;
-//     }
-
-//     .container-aboutMe {
-//         height: 133vh;
-//     }
-
-//     .custom-shape-divider-bottom-1719294244 {
-//         position: relative;
-//         bottom: 56px;
-//     }
-
-//     .container-text-about {
-//         // background: green;
-//         margin: 0 40px;
-//         padding: 5px 30px;
-//     }
-// }
-
-// @media (min-width: 586px) and (max-width: 630px) {
-//     .imgAbout {
-//         left: 15%;
-//         width: 430px;
-//         height: 430px;
-//     }
-
-//     .container-text-about {
-//         // background: green;
-//         margin: 0 40px;
-//         padding: 5px 30px;
-//     }
-
-//     .container-aboutMe {
-//         height: 125vh;
-//     }
-
-//     .custom-shape-divider-bottom-1719294244 {
-//         position: relative;
-//         bottom: 56px;
-//     }
-
-// }
-
-// @media (min-width: 525px) and (max-width: 586px) {
-//     .imgAbout {
-//         left: 15%;
-//         width: 430px;
-//         height: 430px;
-//     }
-
-//     .container-text-about {
-//         // background: green;
-//         margin: 0 40px;
-//         padding: 5px 30px;
-//     }
-
-//     .container-aboutMe {
-//         height: 128vh;
-//     }
-
-//     .custom-shape-divider-bottom-1719294244 {
-//         position: relative;
-//         bottom: 56px;
-//     }
-// }
-
-// @media (min-width: 491px) and (max-width: 525px) {
-//     .imgAbout {
-//         left: 10%;
-//         width: 400px;
-//         height: 400px;
-//     }
-
-//     .container-text-about {
-//         // background: green;
-//         margin: 0 20px;
-//         padding: 5px 30px;
-//     }
-
-//     .container-aboutMe {
-//         height: 136vh;
-//     }
-
-//     .custom-shape-divider-bottom-1719294244 {
-//         position: relative;
-//         bottom: 56px;
-//     }
-// }
-
-// @media (min-width: 467px) and (max-width: 491px) {
-
-//     .imgAbout {
-//         left: 10%;
-//         width: 360px;
-//         height: 360px;
-
-//     }
-//     .container-text-about {
-//         // background: green;
-//         margin: 0 17px;
-//         padding: 5px 10px;
-//     }
-
-//     .container-aboutMe {
-//         height: 132vh;
-//     }
-
-//     .custom-shape-divider-bottom-1719294244 {
-//         position: relative;
-//         bottom: 56px;
-//     }
-
-//     .autor {
-//         position: relative;
-//         left: 80%;
-//     }
-// }
-
-// @media (min-width: 442px) and (max-width: 467px) {
-
-//     .container-aboutMe {
-//         height: 160vh;
-//     }
-
-//     .imgAbout {
-//         left: 10%;
-//         width: 300px;
-//         height: 300px;
-//     }
-
-//     .container-text-about {
-//         // background: green;
-//         margin: 0 17px;
-//         padding: 5px 10px;
-//     }
-
-//     .container-aboutMe {
-//         height: 112vh;
-//     }
-
-//     .custom-shape-divider-bottom-1719294244 {
-//         position: relative;
-//         bottom: 56px;
-//     }
-
-//     .autor {
-//         position: relative;
-//         left: 80%;
-//     }
-
-//     .container-text-about h3 {
-//         font-size: 80px;
-//       }
-// }
-
-// @media (min-width: 378px) and (max-width: 442px) {
-
-//     .container-aboutMe {
-//         height: 160vh;
-//     }
-
-//     .imgAbout {
-//         left: 10%;
-//         width: 300px;
-//         height: 300px;
-//     }
-
-//     .container-text-about {
-//         // background: green;
-//         margin: 0 17px;
-//         padding: 5px 10px;
-//     }
-
-//     .container-aboutMe {
-//         height: 113vh;
-//     }
-
-//     .custom-shape-divider-bottom-1719294244 {
-//         position: relative;
-//         bottom: 20px;
-//     }
-
-//     .autor {
-//         position: relative;
-//         left: 80%;
-//     }
-
-//     .container-text-about h3 {
-//         font-size: 60px;
-//       }
-// }
-
-// @media (min-width: 348px) and (max-width: 378px) {
-//     .container-aboutMe {
-//         height: 160vh;
-//     }
-
-//     .imgAbout {
-//         left: 10%;
-//         width: 250px;
-//         height: 250px;
-//     }
-
-//     .container-text-about {
-//         // background: green;
-//         margin: 0 17px;
-//         padding: 5px 10px;
-//     }
-
-//     .container-aboutMe {
-//         height: 109vh;
-//     }
-
-//     .custom-shape-divider-bottom-1719294244 {
-//         position: relative;
-//         bottom: 20px;
-//     }
-
-//     .autor {
-//         position: relative;
-//         left: 80%;
-//     }
-
-//     .container-text-about h3 {
-//         font-size: 55px;
-//     }
-// }
-
-// @media (min-width: 315px) and (max-width: 348px) {
-//     .container-aboutMe {
-//         height: 160vh;
-//     }
-
-//     .imgAbout {
-//         left: 10%;
-//         width: 240px;
-//         height: 240px;
-//     }
-
-//     .container-text-about {
-//         // background: green;
-//         margin: 0 17px;
-//         padding: 5px 10px;
-//     }
-
-//     .container-aboutMe {
-//         height: 100vh;
-//     }
-
-//     .custom-shape-divider-bottom-1719294244 {
-//         position: relative;
-//         bottom: 12px;
-//     }
-
-//     .autor {
-//         position: relative;
-//         left: 80%;
-//     }
-
-//     .container-text-about h3 {
-//         font-size: 55px;
-//     }
-//     .custom-shape-divider-bottom-1719294244 svg {
-
-//         height: 75px;
-//       }
-
-// }
-
-// @media (min-width: 280px) and (max-width: 315px) {
-//     .container-aboutMe {
-//         height: 160vh;
-//     }
-
-//     .imgAbout {
-//         left: 10%;
-//         width: 220px;
-//         height: 220px;
-//     }
-
-//     .container-text-about {
-//         // background: green;
-//         margin: 0 17px;
-//         padding: 5px 10px;
-//     }
-
-//     .container-aboutMe {
-//         height: 100vh;
-//     }
-
-//     .custom-shape-divider-bottom-1719294244 {
-//         position: relative;
-//         bottom: 5px;
-//     }
-
-//     .autor {
-//         position: relative;
-//         left: 70%;
-//     }
-
-//     .container-text-about h3 {
-//         font-size: 40px;
-//     }
-
-//     .social-icons .social-link {
-//         font-size: 24px;
-//         margin: 10px;
-//       }
-
-//       .custom-shape-divider-bottom-1719294244 svg {
-
-//         height: 70px;
-//       }
-
-// }
+@media (min-width: 1000px) and (max-width: 1200px) {
+  
+  .container-text-about{
+    position: relative;
+    margin: 0 8%;
+    padding: 0 30px;
+    // left: 6%;
+    // background: blue;
+  }
+  .autor {
+    position: relative;
+    left: 80%;
+    // margin-top: 412px;
+  }
+  .container-infor-text{
+    // background-color: red;
+    margin: 100px 10% 0;
+  }
+
+  // 
+  .container-info-text{
+    // background: red;
+    width: 80%;
+    margin: 0 10%;
+    // margin: 0 125px  ;
+  }
+  .containe-info-skills {
+    // width: 100%;
+    max-width: 700px;
+    // padding: 10px;
+  }
+  .container-info-img img {
+    margin: 30px 10%;
+    
+    width: 80%;
+    height: 800px;
+    border-radius: 20px;
+  }
+  .container-info-img-conpetencias{
+    width: 100%;
+  }
+  .container-study-info{
+    // background: red;
+    margin: 40px 10%;
+    // padding: 0 15%;
+  }
+  .container-curso-info{
+    margin: 40px 10%;
+    p{
+      text-align: justify;
+    }
+    // padding: 0 15%;
+    // background: blue;
+  }
+
+  // 
+
+}
 // fin resposibe
