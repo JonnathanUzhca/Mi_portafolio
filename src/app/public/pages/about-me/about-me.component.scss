@@ -146,6 +146,11 @@ i {
   height: 580px;
   border-radius: 20px;
 }
+.autor {
+  position: relative;
+  left: 85%;
+  // margin-top: 412px;
+}
 
 .has-dropcap:first-letter {
   font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
@@ -602,6 +607,7 @@ i {
     margin: 0 10%;
     // margin: 0 125px  ;
   }
+
   .containe-info-skills {
     // width: 100%;
     max-width: 700px;
@@ -617,6 +623,7 @@ i {
   .container-info-img-conpetencias{
     width: 100%;
   }
+
   .container-study-info{
     // background: red;
     margin: 40px 10%;
@@ -630,8 +637,33 @@ i {
     // padding: 0 15%;
     // background: blue;
   }
+}
 
-  // 
+@media (min-width: 1200px) and (max-width: 1570px) {
+  .imgAbout {
+    left: 5%;
+    width: 540px;
+    height: 540px;
+  }
 
+  .container-infor-text{
+    // background-color: red;
+    margin: 100px 20px 0 20% ;
+  }
+
+  .container-study-info{
+    // background: red;
+    margin: 40px 10%;
+    // padding: 0 15%;
+  }
+  .container-curso-info{
+    margin: 40px 10%;
+    p{
+      text-align: justify;
+    }
+    // padding: 0 15%;
+    // background: blue;
+  }
+  
 }
 // fin resposibe
