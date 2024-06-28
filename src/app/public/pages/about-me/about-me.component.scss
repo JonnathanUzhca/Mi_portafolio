@@ -120,6 +120,14 @@ i:hover {
   transform: scale(1.8);
 }
 
+.skills-text li:hover{
+  color: #3e92cc;
+  font-size: 23px;
+  cursor: pointer;
+  // transform: scale(1.2)
+  
+}
+
 i {
   color: white;
   display: inline-block;
