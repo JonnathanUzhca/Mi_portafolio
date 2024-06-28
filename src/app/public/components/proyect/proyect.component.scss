@@ -53,7 +53,7 @@ h3{
 
 
 .img-proyect{
-    overflow-x: hidden;
+    // overflow-x: hidden;
     // height: 10% !important;
     position: relative;
     display: flex;
@@ -96,10 +96,31 @@ img{
     }
 }
 
-.btn{
+#linkVer{
     color: white;
-    border-color: white;
+    text-decoration: none;
+    font-size: 17px;
+    // margin: 23px;
+    
 }
+
+#linkVer:hover{
+ 
+ background: #417eac;
+ padding: 6px 62px;
+ border-radius: 20px;
+ border: 2px solid #2A628F;
+ transform: scale(1.8);
+}
+// .btnVer a{
+//     position: absolute;
+//     // margin: 22px 0;
+//     // width: 170px;
+//     color: white;
+//     border: #59a6d7;
+//     text-decoration: none;
+//     // background: white;
+// }
 
 @media (max-width: 1500px) {
     .container-text-proyec{
